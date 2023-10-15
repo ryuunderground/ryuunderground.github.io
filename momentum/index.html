@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello from HTML</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form id="login-form" class="hidden">
+      <input
+        maxlength="15"
+        required
+        type="text"
+        placeholder="What is ur name?"
+      />
+      <button>Log in</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form" class="hidden">
+      <input type="text" placeholder="Right a to do and press enter" required />
+    </form>
+    <ul id="todo-list" class="hidden"></ul>
+    <h2 id="clock">00:00</h2>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather" class="hidden">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>

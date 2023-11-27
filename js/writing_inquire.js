@@ -31,7 +31,7 @@ function submitPost(event) {
   //등등 서버로 문의 내용 전송//
   //나는 연결할 능력이 없기에 일단 로컬 스토리지로....//
   event.preventDefault();
-  window.location.replace("/templates/notification.html");
+  window.location.replace("/templates/inquire.html");
   window.alert("문의 내용이 작성되었습니다.");
 }
 

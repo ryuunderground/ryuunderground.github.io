@@ -16,7 +16,7 @@ function displayPosts() {
     postElement.innerHTML =
       "<span>" +
       post.order +
-      "</span><a href='/templates/notification_contents.html'<span class='span-anchor'>" +
+      "</span><a href='/templates/inquire_contents.html'<span class='span-anchor'>" +
       post.title +
       "</span></a><span>" +
       post.timeline +

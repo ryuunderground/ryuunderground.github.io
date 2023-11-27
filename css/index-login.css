@@ -188,6 +188,11 @@ body .user-component .login-form * {
   margin: 0.2rem;
   padding: 0.5rem 0.3rem;
 }
+body .user-component .login-form .form__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 body .user-component .login-form .login {
   padding: 0.5rem 0;
   font-size: 1.5rem;

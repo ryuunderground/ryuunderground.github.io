@@ -177,7 +177,7 @@ header {
   grid-template-rows: 2fr 1fr;
   border: 1px solid gray;
   position: fixed;
-  background-color: #e9ddcfe6;
+  background-color: #e9ddcf;
 }
 header .logo {
   width: 100%;

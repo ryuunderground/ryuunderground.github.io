@@ -400,6 +400,9 @@ main .gform .form-elements {
   height: 100%;
 }
 main .gform .form-elements .title_and_contents {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   grid-area: 1/1/3/-1;
 }
 main .gform .form-elements .title_and_contents .inquire__title {

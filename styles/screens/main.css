@@ -1,39 +1,195 @@
-@import "styles/components/reset.css";
-@import "styles/components/header.css";
-@import "styles/components/footer.css";
-@import "styles/components/hamburger.css";
-
-header {
-  grid-template-rows: 1fr;
-  height: 5.5rem;
-  position: fixed;
-  background-color: #e9ddcf;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-main {
-  width: 100%;
-  height: 70vh;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.display-none {
+  display: none !important;
+}
+.upload {
+  width: 6rem;
+  height: 2rem;
+  margin: 0 1.5rem 0.4rem 0;
+}
+.span-anchor {
+  color: #000;
+  text-decoration: none;
+}
+.page_in_now {
+  font-size: large;
+}
+.profile__img__login {
   display: flex;
-  grid-area: 2/1/3/-1;
   justify-content: center;
   align-items: center;
+  border: 3px solid black;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
 }
-main .main_logo__container {
-  width: 40rem;
-  height: 40rem;
+.profile__img__login svg {
+  width: 2rem;
+  height: 2rem;
 }
-main .main_logo__container .main_logo {
+.profile__username__login span {
+  font-size: 1.7rem;
+}
+header {
   width: 100%;
-  height: 100%;
+  height: 5rem;
+  padding: 2rem 2rem 1rem;
 }
-
-@media screen and (min-width: 300px) and (max-width: 1023px) {
-  body {
-    position: relative;
-    box-sizing: border-box;
-    height: 100vh;
-  }
-  body main {
-    width: 100vw;
-  }
+header .instagram {
+  display: flex;
+}
+header .instagram a svg {
+  width: 5rem;
+  height: 5rem;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+body .user-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+body .user-component .magic_club-logo {
+  display: flex;
+  width: 25rem;
+}
+body .user-component .login-form {
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+}
+body .user-component .login-form * {
+  margin: 0.2rem;
+  padding: 0.5rem 0.3rem;
+}
+body .user-component .login-form .login {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
 }

@@ -1,3 +1,8 @@
+@import "styles/components/footer.css";
+@import "styles/components/header.css";
+@import "styles/components/hamburger.css";
+@import "styles/components/reset.css";
+
 html,
 body,
 div,

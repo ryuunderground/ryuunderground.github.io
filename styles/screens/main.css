@@ -391,8 +391,8 @@ main {
   align-items: center;
 }
 main .main_logo__container {
-  width: 40rem;
-  height: 40rem;
+  width: 80px;
+  height: 80px;
 }
 main .main_logo__container .main_logo {
   width: 100%;

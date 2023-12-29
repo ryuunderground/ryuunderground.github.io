@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magic Club Korea - 문의 하기</title>
-    <link rel="stylesheet" href="../css/index-n_i.css" />
+    <link rel="stylesheet" href="../styles/screens/inquire.css" />
   </head>
   <body>
     <header>
@@ -24,8 +24,7 @@
         <a href="/templates/event_ongoing.html" class="span-anchor">
           <div class="menu-option">이벤트</div>
         </a>
-        <a href="#" class="span-anchor">
-          <!--"http:/kakaotalk" -->
+        <a href="https://open.kakao.com/o/g73dHOZf" class="span-anchor">
           <div class="menu-option">커뮤니티</div>
         </a>
         <a href="/templates/inquire.html" class="span-anchor">
@@ -37,7 +36,7 @@
       </div>
       <a
         class="profile__container span-anchor display-none"
-        href="/templates/account.html"
+        href="/account.html"
       >
         <div class="profile">
           <div class="profile__img">
@@ -69,61 +68,133 @@
       >
       <div class="__label">
         <span>문의 하기</span>
-        <a class="span-anchor" href="/templates/writing_inquire.html">
-          <button class="upload">문의 작성</button>
-        </a>
+      </div>
+      <div class="hamburger">
+        <svg
+          class="hamburger__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          height="32"
+          width="32"
+          viewBox="0 0 448 512"
+        >
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="close-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            width="32"
+            viewBox="0 0 384 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+            <path
+              d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+            />
+          </svg>
+        </div>
+        <ul class="mobile-nav-list">
+          <li>
+            <a class="span-anchor" href="/templates/account.html"
+              >마이 페이지</a
+            >
+          </li>
+          <li>
+            <a class="span-anchor" href="/templates/introduction.html"
+              >클럽소개</a
+            >
+          </li>
+          <li>
+            <a class="span-anchor" href="/templates/register.html">회원 가입</a>
+          </li>
+          <li>
+            <a class="span-anchor" href="/templates/event_ongoing.html"
+              >이벤트</a
+            >
+          </li>
+          <li>
+            <a class="span-anchor" href="#">커뮤니티</a>
+          </li>
+          <li>
+            <a class="span-anchor" href="/templates/inquire.html">문의 하기</a>
+          </li>
+          <li>
+            <a class="span-anchor" href="/templates/notification.html"
+              >공지 사항</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
-      <div class="contents__container">
-        <div class="index">
-          <div class="number">번호</div>
-          <div class="title">제목</div>
-          <div class="date">작성일</div>
-        </div>
-        <div class="posts__container">
-          <div class="contents__collumn">
-            <div>
-              <span>1</span>
-            </div>
-            <a
-              class="main_contents span-anchor"
-              href="/templates/inquire_contents.html"
-            >
-              <span>문희는 포도가 먹고싶은데</span>
-            </a>
-            <div><span>2023.11.24</span></div>
+      <form
+        class="gform"
+        method="POST"
+        data-email="magicclub.kr@gmail.com"
+        action="https://script.google.com/macros/s/AKfycbwm6PK-PyvCY50lWWU2-Dce6E-RXTwhjzaCJ1VbGpmeskonT_ufStaJaCzCggsJFBJp/exec"
+      >
+        <div class="form-elements">
+          <div class="title_and_contents">
+            <span class="inquire__title">문의 보내기</span>
+            <p class="inquire__contents">
+              문의는 기본적으로 메일로 받고 있습니다.<br />인스타그램 DM으로
+              문의주시면 더 빠른 답변이 가능합니다.<br />인스타그램:
+              @magic_club.korea
+            </p>
           </div>
+          <fieldset class="pure-group">
+            <label for="name">이름: </label>
+            <input id="name" name="name" placeholder="문의자님 성함" />
+          </fieldset>
+
+          <fieldset class="pure-group">
+            <label for="email">Email: </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              value=""
+              required
+              placeholder="your.name@email.com"
+            />
+          </fieldset>
+          <span class="within-a-day"
+            >문의 답변은 24시간 내에<br />적어주신 메일로 답변드립니다.</span
+          >
+          <fieldset class="pure-group honeypot-field">
+            <label for="honeypot"
+              >스팸 방지용 공란입니다. 해당 빈칸은 비워져있어야합니다.</label
+            >
+            <input id="honeypot" type="text" name="honeypot" value="" />
+          </fieldset>
+          <fieldset class="pure-group writing-inquire">
+            <label for="message">문의 내용: </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="10"
+              placeholder="문의하실 내용을 적어주세요."
+            ></textarea>
+          </fieldset>
+
+          <button class="button-success pure-button button-xlarge">
+            <i class="fa fa-paper-plane"></i>&nbsp;문의 보내기
+          </button>
         </div>
 
-        <div class="pagination__container">
-          <div class="pagination">
-            <svg
-              class="pagination__left-chevron display-none"
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 320 512"
-            >
-              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <path
-                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
-              />
-            </svg>
-            <div class="page_1">1</div>
-            <svg
-              class="pagination__right-chevron display-none"
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 320 512"
-            >
-              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <path
-                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-              />
-            </svg>
-          </div>
+        <div style="display: none" class="thankyou_message">
+          <!-- You can customize the thankyou message by editing the code below -->
+          <h2>
+            <em>감사합니다.</em> 문의 내용은 24시간 내에 응답하신 메일로
+            발송됩니다.
+          </h2>
         </div>
-      </div>
+      </form>
     </main>
     <footer>
       <div class="contact">
@@ -159,5 +230,7 @@
       </div>
     </footer>
     <script src="/js/inquire.js"></script>
+    <script src="/js/hamburger.js"></script>
+    <script data-cfasync="false" src="/js/email.js"></script>
   </body>
 </html>

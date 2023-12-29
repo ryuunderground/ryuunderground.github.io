@@ -1,0 +1,109 @@
+@import "styles/components/reset.css";
+@import "styles/components/header.css";
+@import "styles/components/footer.css";
+@import "styles/components/hamburger.css";
+
+main {
+  display: flex;
+  grid-area: 2/1/3/-1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .gform {
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid #331224;
+  width: 50rem;
+  height: 23rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+main .gform .form-elements {
+  display: grid;
+  grid-template-rows: 15% repeat(5, 1fr) 10%;
+  grid-template-columns: 25% 65% 10%;
+  width: 100%;
+  height: 100%;
+}
+main .gform .form-elements .title_and_contents {
+  grid-area: 1/1/3/-1;
+}
+main .gform .form-elements .title_and_contents .inquire__title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+main .gform .form-elements .title_and_contents .inquire__contents {
+  margin-top: 0.5rem;
+}
+main .gform .form-elements .pure-group {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+main .gform .form-elements .within-a-day {
+  grid-area: 5/1/7/2;
+  display: flex;
+  align-items: center;
+}
+main .gform .form-elements .writing-inquire {
+  grid-area: 3/2/7/-1;
+  display: flex;
+  flex-direction: column;
+}
+main .gform .form-elements .writing-inquire label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+main .gform .form-elements .writing-inquire textarea {
+  width: 99%;
+  height: 80%;
+}
+main .gform .form-elements .honeypot-field {
+  grid-area: -2/1/-1/3;
+  opacity: 0.75;
+  font-size: 0.5rem;
+  flex-direction: row;
+}
+main .gform .form-elements .button-success {
+  grid-area: -2/-2/-1/-1;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1023px) {
+  body {
+    width: 100vw;
+    height: auto;
+  }
+  body main {
+    padding: 5rem 0 1rem 0;
+    width: 100vw;
+  }
+  body main .gform {
+    width: 80%;
+    overflow-y: auto;
+  }
+  body main .gform .form-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+  }
+  body main .gform .form-elements .pure-group,
+  body main .gform .form-elements .within-a-day {
+    display: inline;
+    width: 100%;
+    height: 1rem;
+  }
+  body main .gform .form-elements .pure-button {
+    position: absolute;
+    bottom: 4rem;
+    right: 0.5rem;
+    width: 7rem;
+    height: 2rem;
+  }
+}

@@ -104,7 +104,7 @@ header .__label {
     background-color: #e9ddcf;
     position: relative;
     grid-template-columns: repeat(1fr 5);
-    grid-template-rows: 9rem 1fr minmax(5rem, 1fr);
+    grid-template-rows: 7rem 1fr minmax(3rem, 1fr);
   }
   header .__label {
     grid-area: -2/1/-1/-1;

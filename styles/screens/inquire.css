@@ -87,7 +87,7 @@ main .gform .form-elements .button-success {
     overflow-y: auto;
   }
   body main .gform .form-elements {
-    display: gried;
+    display: grid;
     grid-template-columns: 5fr repeat(1fr 4) 6fr 1fr;
   }
   body main .gform .form-elements .pure-group,

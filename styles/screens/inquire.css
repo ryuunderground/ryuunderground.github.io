@@ -23,7 +23,7 @@ main .gform {
 main .gform .form-elements {
   display: grid;
   grid-template-rows: 15% repeat(5, 1fr) 10%;
-  grid-template-columns: 25% 65% 10%;
+  grid-template-columns: 25% 63% 12%;
   width: 100%;
   height: 100%;
 }

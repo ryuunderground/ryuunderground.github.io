@@ -71,15 +71,15 @@ main .gform .form-elements .honeypot-field {
 }
 main .gform .form-elements .button-success {
   grid-area: -2/-2/-1/-1;
+  width: 100%;
 }
-
 @media screen and (min-width: 300px) and (max-width: 1023px) {
   body {
     width: 100vw;
     height: auto;
   }
   body main {
-    padding-top: 4rem;
+    padding: 5rem 0 1rem;
     width: 100vw;
   }
   body main .gform {
@@ -87,12 +87,39 @@ main .gform .form-elements .button-success {
     overflow-y: auto;
   }
   body main .gform .form-elements {
-    display: grid;
-    grid-template-columns: 5fr repeat(1fr 4) 6fr 1fr;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 5fr repeat(2, 1fr) 1.5fr 5fr 1fr;
+  }
+  body main .gform .form-elements .pure-group {
+    margin-top: 0;
+  }
+  body main .gform .form-elements .title_and_contents {
+    grid-area: 1/1/2/3;
+  }
+  body main .gform .form-elements .pure-group:nth-child(3) {
+    grid-area: 2/1/3/-1;
+  }
+  body main .gform .form-elements .within-a-day {
+    grid-area: 4/1/5/-1;
+  }
+  body main .gform .form-elements .pure-group:nth-child(5) {
+    grid-area: -2/1/-1/2;
+    font-weight: 700;
+    display: flex;
+  }
+  body main .gform .form-elements .pure-group:nth-child(5) input {
+    width: 4rem;
+  }
+  body main .gform .form-elements .writing-inquire {
+    grid-area: 5/1/6/-1;
+  }
+  body main .gform .form-elements .writing-inquire textarea {
+    height: 5rem;
   }
   body main .gform .form-elements .pure-group,
   body main .gform .form-elements .within-a-day {
-    display: flex;
-    flex-direction: column;
+    display: inline;
+    width: 100%;
+    height: 1rem;
   }
 }

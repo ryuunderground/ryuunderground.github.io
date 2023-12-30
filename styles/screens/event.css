@@ -27,7 +27,6 @@ main .ongoing_events {
   grid-template-rows: 3rem repeat(2, 1fr) 3rem;
 }
 main .ongoing_events .event__box {
-  background-color: var(--beige);
   display: flex;
   flex-direction: column;
   justify-content: center;

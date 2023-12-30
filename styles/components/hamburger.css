@@ -40,3 +40,7 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+.too_small {
+  display: none;
+}

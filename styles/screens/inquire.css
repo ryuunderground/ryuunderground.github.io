@@ -87,23 +87,12 @@ main .gform .form-elements .button-success {
     overflow-y: auto;
   }
   body main .gform .form-elements {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 1rem;
-    position: relative;
+    display: gried;
+    grid-template-columns: 5fr repeat(1fr 4) 6fr 1fr;
   }
   body main .gform .form-elements .pure-group,
   body main .gform .form-elements .within-a-day {
-    display: inline;
-    width: 100%;
-    height: 1rem;
-  }
-  body main .gform .form-elements .pure-button {
-    position: absolute;
-    bottom: 4rem;
-    right: 0.5rem;
-    width: 7rem;
-    height: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 }

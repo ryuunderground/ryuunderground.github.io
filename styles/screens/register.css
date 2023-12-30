@@ -47,14 +47,11 @@
   align-items: center;
   width: 100%;
 }
-
-.register__container
-  .user-component
-  .register-form
-  .register__phone-number
-  input {
+.register__phone-number span,
+.phone_number {
   width: 20%;
 }
+
 .register__container .user-component .register-form .register__title {
   padding: 0.5rem 0;
   font-weight: 700;

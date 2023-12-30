@@ -91,7 +91,7 @@ main .ongoing_events .pagination__container .pagination .page_1 {
     height: auto;
   }
   body main {
-    padding: 5rem 0 1rem;
+    padding-top: 4rem;
     width: 100vw;
   }
   body main .ongoing_events {

@@ -85,28 +85,39 @@ main .ongoing_events .pagination__container .pagination .page_1 {
   width: 2rem;
   height: 2rem;
 }
+
 @media screen and (min-width: 300px) and (max-width: 1023px) {
   body {
     width: 100vw;
     height: auto;
   }
   body main {
-    padding: 5rem 0 1rem;
+    padding-top: 4rem;
     width: 100vw;
   }
-  body main .ongoing_events {
+  body main .gform {
+    width: 80%;
+    overflow-y: auto;
+  }
+  body main .gform .form-elements {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    gap: 1rem;
+    position: relative;
   }
-  body main .ongoing_events .event__box {
-    width: 75%;
+  body main .gform .form-elements .pure-group,
+  body main .gform .form-elements .within-a-day {
+    display: inline;
+    width: 100%;
+    height: 1rem;
   }
-  body main .pagination__container {
-    margin-bottom: 3rem;
-  }
-  body footer {
-    margin-top: 5rem;
+  body main .gform .form-elements .pure-button {
+    position: absolute;
+    bottom: 4rem;
+    right: 0.5rem;
+    width: 7rem;
+    height: 2rem;
   }
 }

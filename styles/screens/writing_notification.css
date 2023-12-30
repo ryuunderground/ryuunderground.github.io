@@ -17,15 +17,15 @@ main .inquire__container {
   gap: 1rem;
   width: 80%;
   height: 80%;
-  border: 5px double #331224;
-  background-color: #fff;
+  border: 5px double var(--dark_brown);
+  background-color: var(--beige);
   position: relative;
 }
 main .inquire__container .title__container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid #331224;
+  border-bottom: 1px solid var(--dark_brown);
 }
 main .inquire__container .title__container .title__input {
   font-size: 2.5rem;

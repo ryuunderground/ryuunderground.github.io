@@ -11,7 +11,7 @@
   right: 0;
   height: 100%;
   width: 35%;
-  background-color: #e9ddcf;
+  background-color: var(--beige);
   opacity: 0;
   grid-template-rows: 2rem repeat(8, 1rem);
   padding: 20px;

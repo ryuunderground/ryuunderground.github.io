@@ -17,15 +17,15 @@ main .main-content {
   gap: 1rem;
   width: 80%;
   height: 80%;
-  border: 5px double #331224;
-  background-color: #fff;
+  border: 5px double var(--dark_brown);
+  background-color: var(--beige);
 }
 main .main-content .content__title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 1.5rem;
-  border-bottom: 1px solid #331224;
+  border-bottom: 1px solid var(--dark_brown);
 }
 main .main-content .content__title .title {
   font-size: 2.5rem;
@@ -36,6 +36,6 @@ main .main-content .content__paragraph {
   padding-left: 3rem;
 }
 main .main-content .answer {
-  border-top: 1px solid #331224;
+  border-top: 1px solid var(--dark_brown);
   min-height: 4rem;
 }

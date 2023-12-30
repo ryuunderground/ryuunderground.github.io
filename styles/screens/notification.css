@@ -67,8 +67,8 @@ main .contents__container .pagination__container .pagination .page_1 {
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  background-color: #faebd7;
-  border: 1px solid #331224;
+  background-color: var(--beige);
+  border: 1px solid var(--dark_brown);
   border-radius: 50%;
   width: 2rem;
   height: 2rem;

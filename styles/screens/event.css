@@ -8,7 +8,7 @@
   gap: 1rem;
 }
 .__label .event_anchor {
-  color: #fff;
+  color: var(--beige);
   text-decoration: none;
 }
 main {
@@ -27,7 +27,7 @@ main .ongoing_events {
   grid-template-rows: 3rem repeat(2, 1fr) 3rem;
 }
 main .ongoing_events .event__box {
-  background-color: #fff;
+  background-color: var(--beige);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,8 +79,8 @@ main .ongoing_events .pagination__container .pagination .page_1 {
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  background-color: #faebd7;
-  border: 1px solid #331224;
+  background-color: var(--beige);
+  border: 1px solid var(--dark_brown);
   border-radius: 50%;
   width: 2rem;
   height: 2rem;

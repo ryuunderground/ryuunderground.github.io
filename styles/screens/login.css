@@ -38,7 +38,7 @@ body .user-component .login-form .login {
     width: 100vw;
     height: 100vh;
     z-index: 99;
-    background-color: bisque;
+    background-color: var(--beige);
     font-size: 5rem;
   }
 }

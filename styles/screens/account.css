@@ -16,8 +16,8 @@ main .account_info {
   grid-template-rows: 15% repeat(5, 1fr) 10%;
   grid-template-columns: repeat(2, 1fr);
   flex-direction: column;
-  background-color: #fff;
-  border: 2px solid #331224;
+  background-color: var(--beige);
+  border: 2px solid var(--dark_brown);
   width: 50rem;
   height: 20rem;
   padding: 1rem;

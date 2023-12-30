@@ -1,5 +1,4 @@
 @import "/styles/components/reset.css";
-@import "/styles/components/resizing.css";
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -29,4 +28,17 @@ body .user-component .login-form .login {
   padding: 0.5rem 0;
   font-size: 1.5rem;
   font-weight: 700;
+}
+.too_small {
+  display: none;
+}
+@media screen and (max-width: 300px) {
+  .too_small {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: bisque;
+    font-size: 5rem;
+  }
 }

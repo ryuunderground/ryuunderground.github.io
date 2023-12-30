@@ -169,7 +169,3 @@ header .instagram a svg {
   width: 5rem;
   height: 5rem;
 }
-.profile__container * {
-  display: none;
-  border: none;
-}

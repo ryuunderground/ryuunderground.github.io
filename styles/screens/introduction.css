@@ -157,12 +157,12 @@ html {
 }
 body {
   display: grid;
+  position: relative;
   grid-template-rows: 9rem 1fr 5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   width: 100%;
   min-height: 100vh;
-  position: relative;
 }
 header {
   display: grid;
@@ -201,9 +201,8 @@ header .menu_bar {
   align-items: center;
 }
 header .profile__container {
-  grid-area: 1/-2/2/-2;
-  width: 100%;
   display: flex;
+  grid-area: 1/-2/2/-1;
   justify-content: center;
   align-items: center;
 }
@@ -214,11 +213,7 @@ header .profile__container .profile {
   align-items: center;
   gap: 1rem;
   width: 100%;
-}
-header .profile__container .profile .profile__img img {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+  height: 100%;
 }
 header .__label {
   display: flex;
@@ -235,19 +230,11 @@ header .__label {
   width: 100%;
   height: 3rem;
 }
-.main {
-  overflow-y: scroll;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-}
 @media screen and (min-width: 300px) and (max-width: 1023px) {
   html {
     width: 100vw;
   }
   body {
-    position: relative;
     width: 100%;
     height: 100vw;
   }
@@ -274,15 +261,12 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  header .logo .logo__img__container .logo__img {
-    width: 100%;
-    height: 100%;
+  header .logo .logo__img__container img {
+    width: 150px;
+    height: 150px;
   }
   header .menu_bar,
   header .profile__container {
-    display: none;
-  }
-  header .menu_bar * {
     display: none;
   }
   header .hamburger {
@@ -296,14 +280,13 @@ footer {
     color: #000;
   }
 }
-.profile__container * {
-  display: none;
-  border: none;
+footer {
+  position: absolute;
+  bottom: 0;
 }
-
 @media screen and (max-width: 300px) {
   .too_small {
-    display: flex;
+    display: flex !important;
     width: 100vw;
     height: 100vh;
     z-index: 99;
@@ -315,10 +298,10 @@ footer {
   display: flex;
   width: 100%;
   height: 5rem;
-  justify-content: flex-end;
+  justify-content: end;
   align-items: center;
   background-color: #faebd7;
-  grid-area: 3/1/4/-1;
+  grid-area: 3/1/-1/-1;
   z-index: 3;
 }
 footer .contact {
@@ -380,6 +363,9 @@ footer .sns svg {
   margin-bottom: 1rem;
   font-weight: 700;
   font-size: 1.2rem;
+}
+.too_small {
+  display: none;
 }
 main {
   width: 100%;

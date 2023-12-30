@@ -157,6 +157,7 @@ html {
 }
 body {
   display: grid;
+  position: relative;
   grid-template-rows: 9rem 1fr 5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
@@ -200,9 +201,8 @@ header .menu_bar {
   align-items: center;
 }
 header .profile__container {
-  grid-area: 1/-2/2/-2;
-  width: 100%;
   display: flex;
+  grid-area: 1/-2/2/-1;
   justify-content: center;
   align-items: center;
 }
@@ -213,11 +213,7 @@ header .profile__container .profile {
   align-items: center;
   gap: 1rem;
   width: 100%;
-}
-header .profile__container .profile .profile__img img {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+  height: 100%;
 }
 header .__label {
   display: flex;
@@ -239,7 +235,6 @@ header .__label {
     width: 100vw;
   }
   body {
-    position: relative;
     width: 100%;
     height: 100vw;
   }
@@ -266,15 +261,12 @@ header .__label {
     justify-content: center;
     align-items: center;
   }
-  header .logo .logo__img__container .logo__img {
-    width: 100%;
-    height: 100%;
+  header .logo .logo__img__container img {
+    width: 150px;
+    height: 150px;
   }
   header .menu_bar,
   header .profile__container {
-    display: none;
-  }
-  header .menu_bar * {
     display: none;
   }
   header .hamburger {
@@ -288,17 +280,13 @@ header .__label {
     color: #000;
   }
 }
-.profile__container * {
-  display: none;
-  border: none;
-}
 footer {
   position: absolute;
   bottom: 0;
 }
 @media screen and (max-width: 300px) {
   .too_small {
-    display: flex;
+    display: flex !important;
     width: 100vw;
     height: 100vh;
     z-index: 99;
@@ -310,10 +298,10 @@ footer {
   display: flex;
   width: 100%;
   height: 5rem;
-  justify-content: flex-end;
+  justify-content: end;
   align-items: center;
   background-color: #faebd7;
-  grid-area: 3/1/4/-1;
+  grid-area: 3/1/-1/-1;
   z-index: 3;
 }
 footer .contact {
@@ -376,78 +364,89 @@ footer .sns svg {
   font-weight: 700;
   font-size: 1.2rem;
 }
-main {
-  display: flex;
-  grid-area: 2/1/3/-1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.too_small {
+  display: none;
 }
-main .gform {
-  flex-direction: column;
-  background-color: #fff;
-  border: 2px solid #331224;
-  width: 50rem;
-  height: 23rem;
-  padding: 1rem;
+.__label {
   gap: 1rem;
 }
-main .gform .form-elements {
-  display: grid;
-  grid-template-rows: 15% repeat(5, 1fr) 10%;
-  grid-template-columns: 25% 63% 12%;
+.__label .event_anchor {
+  color: #fff;
+  text-decoration: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  grid-area: 2/1/3/-1;
   width: 100%;
   height: 100%;
 }
-main .gform .form-elements .title_and_contents {
+main .ongoing_events {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+  grid-template-columns: 2rem repeat(5, 1fr) 2rem;
+  grid-template-rows: 3rem repeat(2, 1fr) 3rem;
+}
+main .ongoing_events .event__box {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  grid-area: 1/1/3/-1;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
 }
-main .gform .form-elements .title_and_contents .inquire__title {
-  font-size: 3rem;
+main .ongoing_events .event__box .event__img {
+  width: 12rem;
+  height: 12rem;
+  margin-top: 1rem;
+  background-color: #000;
+}
+main .ongoing_events .event__box .event__explain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 12rem;
+  padding: 0.5rem 0 1rem;
+}
+main .ongoing_events .event__box .event__explain .event__title {
   font-weight: 700;
+  font-size: 1.7rem;
+  margin: 0.3rem;
 }
-main .gform .form-elements .title_and_contents .inquire__contents {
-  margin-top: 0.5rem;
+main .ongoing_events .event__box .event__explain .event__date {
+  margin-left: 0.5rem;
 }
-main .gform .form-elements .pure-group {
+main .ongoing_events .event__box:nth-child(1) {
+  grid-area: 2/2/3/3;
+}
+main .ongoing_events .event__box:nth-child(2) {
+  grid-area: 2/3/3/4;
+}
+main .ongoing_events .pagination__container {
   display: flex;
-  justify-content: start;
-  flex-direction: column;
-  align-items: start;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
-}
-main .gform .form-elements .within-a-day {
-  grid-area: 5/1/7/2;
-  display: flex;
+  grid-area: -2/1/-1/-1;
+  justify-content: center;
   align-items: center;
 }
-main .gform .form-elements .writing-inquire {
-  grid-area: 3/2/7/-1;
+main .ongoing_events .pagination__container .pagination {
   display: flex;
-  flex-direction: column;
-}
-main .gform .form-elements .writing-inquire label {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-main .gform .form-elements .writing-inquire textarea {
-  width: 99%;
-  height: 80%;
-}
-main .gform .form-elements .honeypot-field {
-  grid-area: -2/1/-1/3;
-  opacity: 0.75;
-  font-size: 0.5rem;
   flex-direction: row;
+  align-items: center;
+  gap: 2rem;
 }
-main .gform .form-elements .button-success {
-  grid-area: -2/-2/-1/-1;
-  width: 6rem;
+main .ongoing_events .pagination__container .pagination .page_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background-color: #faebd7;
+  border: 1px solid #331224;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
 }
 @media screen and (min-width: 300px) and (max-width: 1023px) {
   body {
@@ -458,29 +457,19 @@ main .gform .form-elements .button-success {
     padding: 5rem 0 1rem;
     width: 100vw;
   }
-  body main .gform {
-    width: 80%;
-    overflow-y: auto;
-  }
-  body main .gform .form-elements {
+  body main .ongoing_events {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 1rem;
-    position: relative;
+    justify-content: center;
+    align-items: center;
   }
-  body main .gform .form-elements .pure-group,
-  body main .gform .form-elements .within-a-day {
-    display: inline;
-    width: 100%;
-    height: 1rem;
+  body main .ongoing_events .event__box {
+    width: 75%;
   }
-  body main .gform .form-elements .pure-button {
-    position: absolute;
-    bottom: 2.2rem;
-    right: 0.5rem;
-    width: 7rem;
-    height: 2rem;
+  body main .pagination__container {
+    margin-bottom: 3rem;
+  }
+  body footer {
+    margin-top: 5rem;
   }
 }

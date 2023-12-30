@@ -90,7 +90,6 @@ main .gform .form-elements .button-success {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
     gap: 1rem;
     position: relative;
   }

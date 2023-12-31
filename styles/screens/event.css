@@ -55,11 +55,20 @@ main .ongoing_events .event__box .event__explain .event__title {
 main .ongoing_events .event__box .event__explain .event__date {
   margin-left: 0.5rem;
 }
-main .ongoing_events .event__box:nth-child(1) {
+main .ongoing_events .event__box:first-child {
   grid-area: 2/2/3/3;
 }
 main .ongoing_events .event__box:nth-child(2) {
   grid-area: 2/3/3/4;
+}
+main .ongoing_events .event__box:nth-child(3) {
+  grid-area: 2/4/3/5;
+}
+main .ongoing_events .event__box:nth-child(4) {
+  grid-area: 2/5/3/6;
+}
+main .ongoing_events .event__box:nth-child(5) {
+  grid-area: 2/6/3/7;
 }
 main .ongoing_events .pagination__container {
   display: flex;

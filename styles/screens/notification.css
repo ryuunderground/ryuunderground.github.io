@@ -29,7 +29,11 @@ main .contents__container .contents__collumn,
 main .contents__container .index {
   border: 1px solid rgba(0, 0, 0, 0.2);
   display: grid;
-  grid-template-columns: 5% 75% 15% 5%;
+  grid-template-columns: 10% 70% 20% 10rem;
+}
+main .contents__container .contents__collumn span:nth-child(3),
+main .contents__container .index span:nth-child(3) {
+  font-size: 0.6rem;
 }
 main .contents__container .contents__collumn *,
 main .contents__container .index * {
@@ -67,10 +71,15 @@ main .contents__container .pagination__container .pagination .page_1 {
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  background-color: var(--beige);
-  border: 1px solid var(--dark_brown);
+  background-color: #faebd7;
+  border: 1px solid #331224;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
   opacity: 0.8;
+}
+@media screen and (min-width: 300px) and (max-width: 1023px) {
+  main {
+    margin-top: 1rem;
+  }
 }

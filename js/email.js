@@ -83,6 +83,7 @@
           alert(
             "감사합니다. 문의 내용은 24시간 내에 응답하신 메일로 발송됩니다."
           );
+          location.replace("/templates/inquire.html");
         }
       }
     };
@@ -110,8 +111,6 @@
       buttons[i].disabled = true;
     }
   }
-
-  location.replace("/templates/inquire.html");
 });
 
 inquire__email();

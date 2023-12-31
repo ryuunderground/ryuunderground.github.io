@@ -8,7 +8,6 @@
       .filter(function (k) {
         if (elements[k].name === "honeypot") {
           honeypot = elements[k].value;
-          alert("문의 작성 중 오류가 있습니다.");
           return false;
         }
         return true;
@@ -62,11 +61,10 @@
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
     if (formData.honeypot) {
-      alert("문의 작성 중 오류가 있습니다.");
       return false;
     }
 
-    // disableAllButtons(form);
+    disableAllButtons(form);
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url);
@@ -82,6 +80,9 @@
         var thankYouMessage = form.querySelector(".thankyou_message");
         if (thankYouMessage) {
           thankYouMessage.style.display = "block";
+          alert(
+            "감사합니다. 문의 내용은 24시간 내에 응답하신 메일로 발송됩니다."
+          );
         }
       }
     };
@@ -109,7 +110,7 @@
       buttons[i].disabled = true;
     }
   }
-  alert("감사합니다. 문의 내용은 24시간 내에 응답하신 메일로 발송됩니다.");
+
   location.replace("/templates/inquire.html");
 });
 

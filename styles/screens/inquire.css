@@ -73,6 +73,12 @@ main .gform .form-elements .button-success {
   grid-area: -2/-2/-1/-1;
   width: 100%;
 }
+.thankyou_message span {
+  font-size: 3rem;
+}
+thankyou_message h2 {
+  font-size: 1rem;
+}
 @media screen and (min-width: 300px) and (max-width: 1023px) {
   body {
     width: 100vw;

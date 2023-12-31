@@ -30,7 +30,6 @@ footer .sns svg {
   footer {
     position: absolute;
     bottom: 0;
-    font-size: 0.75rem;
     width: 100%;
   }
   footer .contact .contact__phone-number {

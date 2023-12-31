@@ -42,7 +42,7 @@ main .ongoing_events .event__box .event__img {
 .event__img img {
   width: 12rem;
   height: 12rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 main .ongoing_events .event__box .event__explain {
   display: flex;

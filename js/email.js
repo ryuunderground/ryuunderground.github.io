@@ -1,4 +1,4 @@
-(function inquire__email() {
+(function () {
   // get all data in form and return object
   function getFormData(form) {
     var elements = form.elements;
@@ -80,10 +80,6 @@
         var thankYouMessage = form.querySelector(".thankyou_message");
         if (thankYouMessage) {
           thankYouMessage.style.display = "block";
-          alert(
-            "감사합니다. 문의 내용은 24시간 내에 응답하신 메일로 발송됩니다."
-          );
-          location.replace("/templates/inquire.html");
         }
       }
     };
@@ -111,6 +107,6 @@
       buttons[i].disabled = true;
     }
   }
-});
+})();
 
-inquire__email();
+console.log("red");

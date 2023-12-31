@@ -37,7 +37,12 @@ main .ongoing_events .event__box .event__img {
   width: 12rem;
   height: 12rem;
   margin-top: 1rem;
-  background-color: #000;
+  background-color: black;
+}
+.event__img img {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
 }
 main .ongoing_events .event__box .event__explain {
   display: flex;

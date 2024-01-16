@@ -18,7 +18,6 @@ main .main-content {
   width: 80%;
   height: 80%;
   border: 5px double var(--dark_brown);
-  background-color: var(--beige);
 }
 main .main-content .content__title {
   display: flex;

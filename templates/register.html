@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magic club Korea - Register</title>
-    <link rel="stylesheet" href="../styles/screens/register.css" />
+    <link rel="stylesheet" href="../styles/screens/register.scss" />
   </head>
 
   <body>
     <div class="instagram">
-      <a href="https://www.instagram.com/magic_club.korea/">
+      <a href="https://www.instagram.com/magic_club_official/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="1em"
@@ -25,13 +25,16 @@
       <div class="user-component">
         <a href="/templates/main.html">
           <div class="logo">
-            <img src="../img/mklogo.png" class="magic_club-logo" />
+            <img src="/img/mklogo.png" class="magic_club-logo" />
           </div>
         </a>
       </div>
+      <div class=""></div>
       <div class="user-component">
         <form class="register-form">
-          <h2 class="register__title">회원가입</h2>
+          <div class="form__header">
+            <h2 class="register__title">회원가입</h2>
+          </div>
           <input required type="text" class="username" placeholder="이름" />
           <input required type="text" class="nickname" placeholder="닉네임" />
           <input required type="text" class="id" placeholder="아이디" />
@@ -74,6 +77,12 @@
           </label>
           <button class="register__btn">회원가입</button>
         </form>
+      </div>
+      <div class="user-component">
+        <span>이미 계정이 있으신가요?</span>
+        <a href="/templates/login.html" class="span-anchor"
+          ><span>로그인 하기</span></a
+        >
       </div>
     </div>
     <script src="../js/register.js"></script>

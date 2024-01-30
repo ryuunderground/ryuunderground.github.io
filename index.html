@@ -11,57 +11,54 @@
     <header>
       <a href="/templates/main.html" class="logo">
         <div class="logo__img__container">
-          <img src="../img/mklogotp.png" />
+          <img src="/img/mklogotp.png" />
         </div>
       </a>
-      <div class="menu_bar">
-        <a href="/templates/introduction.html" class="span-anchor">
-          <div class="menu-option">클럽소개</div>
-        </a>
-        <!--
-        <a href="/templates/register.html" class="span-anchor">
-          <div class="menu-option">회원 가입 안내</div>
-        </a>
-      -->
-        <a href="/templates/event_ongoing.html" class="span-anchor">
-          <div class="menu-option">이벤트</div>
-        </a>
-        <a
-          href="https://open.kakao.com/o/g73dHOZf"
-          class="span-anchor"
-          target="_blank"
-        >
-          <div class="menu-option">커뮤니티</div>
-        </a>
-        <a href="/templates/inquire.html" class="span-anchor">
-          <div class="menu-option">문의 하기</div>
-        </a>
-        <a href="/templates/notification.html" class="span-anchor">
-          <div class="menu-option">공지 사항</div>
-        </a>
-      </div>
+
+      <ul class="menu_bar">
+        <li>
+          <button class="menu-option abtn" onclick="openIntro()">
+            클럽 소개
+          </button>
+        </li>
+        <li>
+          <button class="menu-option abtn" onclick="openEvent()">이벤트</button>
+        </li>
+        <li>
+          <button class="menu-option abtn" onclick="openComu()">
+            커뮤니티
+          </button>
+        </li>
+        <li>
+          <button class="menu-option abtn" onclick="openInquire()">
+            문의 하기
+          </button>
+        </li>
+        <li>
+          <button class="menu-option abtn" onclick="openNotice()">
+            공지 사항
+          </button>
+        </li>
+      </ul>
+      <!--로그인 시 실명과 함께 등장
       <a
-        class="profile__container span-anchor after_login display-none"
-        href="/templates/account.html"
-      >
+        class="profile__container span-anchor"
+        href="/account.html>
         <div class="profile">
           <div class="profile__username">
             <span class="span-anchor">Admin1234</span>
           </div>
-        </div></a
-      >
-      <a
-        class="profile__container span-anchor before_login"
-        href="/templates/login.html"
-      >
+        </div>
+      </a>
+      -->
+      <a class="profile__container span-anchor" href="/templates/login.html">
         <div class="profile">
           <div class="profile__img profile__img__login">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="http:/www.w3.org/2000/svg"
               height="1em"
               viewBox="0 0 448 512"
             >
-              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
               <path
                 d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
               />
@@ -70,8 +67,8 @@
           <div class="profile__username__login">
             <span>로그인</span>
           </div>
-        </div>
-      </a>
+        </div></a
+      >
 
       <div class="hamburger">
         <svg
@@ -81,7 +78,6 @@
           width="32"
           viewBox="0 0 448 512"
         >
-          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
           <path
             d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
           />
@@ -96,7 +92,6 @@
             width="32"
             viewBox="0 0 384 512"
           >
-            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
             <path
               d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
             />
@@ -104,43 +99,39 @@
         </div>
         <ul class="mobile-nav-list">
           <li>
-            <a class="span-anchor display-none" href="/templates/account.html"
-              >마이 페이지</a
-            >
+            <button class="menu-option abtn" onclick="openAccount()">
+              마이 페이지
+            </button>
           </li>
           <li>
-            <a class="span-anchor" href="/templates/login.html">로그인</a>
+            <button class="menu-option abtn" onclick="openLogin()">
+              로그인
+            </button>
           </li>
           <li>
-            <a class="span-anchor" href="/templates/introduction.html"
-              >클럽소개</a
-            >
-          </li>
-          <!--
-          <li>
-            <a class="span-anchor" href="/templates/register.html">회원 가입</a>
-          </li>
-        -->
-          <li>
-            <a class="span-anchor" href="/templates/event_ongoing.html"
-              >이벤트</a
-            >
+            <button class="menu-option abtn" onclick="openIntro()">
+              클럽소개
+            </button>
           </li>
           <li>
-            <a
-              class="span-anchor"
-              href="https://open.kakao.com/o/g73dHOZf"
-              target="_blank"
-              >커뮤니티</a
-            >
+            <button class="menu-option abtn" onclick="openEvent()">
+              이벤트
+            </button>
           </li>
           <li>
-            <a class="span-anchor" href="/templates/inquire.html">문의 하기</a>
+            <button class="menu-option abtn" onclick="openComu()">
+              커뮤니티
+            </button>
           </li>
           <li>
-            <a class="span-anchor" href="/templates/notification.html"
-              >공지 사항</a
-            >
+            <button class="menu-option abtn" onclick="openInquire()">
+              문의 하기
+            </button>
+          </li>
+          <li>
+            <button class="menu-option abtn" onclick="openNotice()">
+              공지 사항
+            </button>
           </li>
         </ul>
       </div>
@@ -154,7 +145,7 @@
     <footer>
       <div class="contact">
         <span class="contact__phone-number"> 대표번호: 010-1234-1234</span>
-        <a href="https://www.instagram.com/magic_club.korea/">
+        <a href="https://www.instagram.com/magic_club_official/">
           <div class="contact__instagram sns">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +159,7 @@
             </svg>
           </div>
         </a>
-        <a href="https://www.youtube.com/channel/UCfZgnRpYmdlUF3IHruwYz8A">
+        <a href="https://www.youtube.com/">
           <div class="contact__youtube sns">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -185,5 +176,6 @@
       </div>
     </footer>
     <script src="/js/hamburger.js"></script>
+    <script src="/js/open.js"></script>
   </body>
 </html>

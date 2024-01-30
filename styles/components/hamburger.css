@@ -1,0 +1,40 @@
+.hamburger {
+  display: none;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.mobile-menu {
+  display: grid;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 35%;
+  background-color: var(--beige);
+  opacity: 0;
+  grid-template-rows: 2rem repeat(8, 1rem);
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 5;
+  transform: translate(100%);
+  transition: all 0.5s ease-out;
+}
+.close-menu {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+}
+.mobile-nav-list {
+  padding-top: 1.5rem;
+}
+.mobile-nav-list li {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.too_small {
+  display: none;
+}

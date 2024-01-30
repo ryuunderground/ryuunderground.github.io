@@ -1,4 +1,4 @@
-@import "styles/components/reset.css";
+@import "../components/reset.css";
 
 header {
   display: flex;

@@ -3,20 +3,24 @@
 @import "../components/footer.css";
 @import "../components/hamburger.css";
 
+header {
+  top: 0;
+}
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   grid-area: 2/1/3/-1;
   padding-bottom: 3rem;
 }
 main .slideshow-container {
   position: relative;
-  margin-top: 4%;
+  margin: 4% 0;
   width: 90%;
-  height: 60%;
+  height: 80%;
   border: 5px solid black;
 }
 main .slideshow-container .prev {
@@ -33,7 +37,7 @@ main .slideshow-container .next {
 }
 main .slideshow-container .prev:hover,
 main .slideshow-container .next:hover {
-  font-size: 5.5rem;
+  transform: scale(1.2);
   cursor: pointer;
 }
 main .slideshow-container .slide {
@@ -44,11 +48,11 @@ main .slideshow-container .slide {
 }
 main .slideshow-container .slide .icon {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 main .slideshow-container .slide .icon .slide__logo {
-  width: 90%;
+  width: 400px;
 }
 main .slideshow-container .slide .text-container {
   display: none;
@@ -69,9 +73,18 @@ main .slideshow-container .slide .text-container .go_to_register {
   font-size: 1rem;
   margin-left: 0.5rem;
   display: none;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
 }
-main .slideshow-container .slide .text-container .go_to_register:hover {
-  font-size: 1.2rem;
+main
+  .slideshow-container
+  .slide
+  .text-container
+  .go_to_register
+  .register__btn:hover {
+  transform: scale(1.2);
   cursor: pointer;
 }
 main .slideshow-container .slide .rdimg {
@@ -94,5 +107,81 @@ main .slideshow-container .slide .rdimg img {
   }
   to {
     opacity: 1;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 1023px) {
+  body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  body main {
+    height: 85%;
+  }
+  .slideshow-container {
+    box-sizing: border-box;
+    height: 60% !important;
+  }
+  .slideshow-container .slide {
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: none !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: 1.5rem;
+  }
+  .slideshow-container .slide .icon {
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-self: center;
+  }
+  .slideshow-container .slide .icon .slide__logo {
+    padding: 1rem;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .slideshow-container .slide .icon .rdimg {
+    width: 100%;
+    height: 100%;
+  }
+  .slideshow-container .slide .icon .rdimg img {
+    padding: 1rem;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .slideshow-container .slide .text-container {
+    display: grid;
+    grid-template-rows: 30% 50% 20% !important;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .slideshow-container .slide .text-container .intro__title {
+    font-size: 2rem !important;
+    align-items: center;
+  }
+  .slideshow-container .slide .text-container .intro__contents {
+    font-size: 1rem !important;
+  }
+  .slideshow-container .slide .text-container .go_to_register {
+    justify-content: flex-end !important;
+    padding: 0.5rem;
+  }
+  .slideshow-container .slide .text-container .go_to_register .register__btn {
+    margin-right: 2rem;
+  }
+  .slideshow-container .chevrons {
+    margin: 1rem;
+    width: 100%;
+    z-index: 55;
+  }
+  .slideshow-container .chevrons .prev {
+    right: 6rem !important;
+    bottom: -5rem;
+  }
+  .slideshow-container .chevrons .next {
+    right: 0.5rem !important;
+    bottom: -5rem;
   }
 }

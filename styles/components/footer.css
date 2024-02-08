@@ -7,6 +7,8 @@ footer {
   background-color: var(--beige);
   grid-area: 3/1/-1/-1;
   z-index: 3;
+  position: absolute;
+  bottom: 0;
 }
 footer .contact {
   display: flex;
@@ -16,8 +18,12 @@ footer .contact {
   padding-right: 1rem;
 }
 footer .contact .contact__phone-number {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 700;
+}
+footer .contact .contact__media {
+  background-color: transparent;
+  border: none;
 }
 footer .sns svg {
   width: 5rem;
@@ -27,7 +33,6 @@ footer .sns svg {
   footer {
     position: absolute;
     bottom: 0;
-    font-size: 0.75rem;
     width: 100vw;
   }
   footer .contact .contact__phone-number {

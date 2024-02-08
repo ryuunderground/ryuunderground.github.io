@@ -1,7 +1,7 @@
-const images = []; // 배열에 이미지 파일 경로를 추가해주세요.
+const images = [];
 
 for (let i = 1; i <= 10; i++) {
-  images.push(`../img/past/${i}.jpg`); // 이미지 파일 경로를 숫자로 변경해주세요.
+  images.push(`../img/past/${i}.jpg`);
 }
 
 const rdImg = document.querySelector(".rdimg");

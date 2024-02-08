@@ -2,6 +2,7 @@
 @import "../components/header.css";
 @import "../components/footer.css";
 @import "../components/hamburger.css";
+
 .__label {
   justify-content: space-between !important;
 }

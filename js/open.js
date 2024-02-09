@@ -1,9 +1,9 @@
 function openIntro() {
-  window.open("introduction.html", "_self");
+  window.open("/templates/introduction.html", "_self");
 }
 
 function openEvent() {
-  window.open("event_ongoing.html", "_self");
+  window.open("/templates/event_ongoing.html", "_self");
 }
 
 function openComu() {
@@ -11,31 +11,31 @@ function openComu() {
 }
 
 function openInquire() {
-  window.open("inquire.html", "_self");
+  window.open("/templates/inquire.html", "_self");
 }
 
 function openNotice() {
-  window.open("notification.html", "_self");
+  window.open("/templates/notification.html", "_self");
 }
 
 function openAccount() {
-  window.open("account.html", "_self");
+  window.open("/templates/account.html", "_self");
 }
 
 function openRegister() {
-  window.open("register.html", "_self");
+  window.open("/templates/register.html", "_self");
 }
 
 function openLogin() {
-  window.open("login.html", "_self");
+  window.open("/templates/login.html", "_self");
 }
 
 function openRule() {
-  window.open("notification_rule.html", "_self");
+  window.open("/templates/notification_rule.html", "_self");
 }
 
 function openTest() {
-  window.open("notification_contents.html", "_self");
+  window.open("/templates/notification_contents.html", "_self");
 }
 function openInsta() {
   window.open("https://www.instagram.com/magic_club.korea/", "_blank");

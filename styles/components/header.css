@@ -38,7 +38,8 @@ header .logo .logo__img__container img {
   height: 5.5rem;
   max-height: 150px;
   position: absolute;
-  right: 0.6rem;
+  right: 3rem;
+  bottom: -0.2rem;
 }
 header .menu_bar {
   display: flex;

@@ -18,7 +18,7 @@ footer .contact {
   padding-right: 1rem;
 }
 footer .contact .contact__phone-number {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 footer .contact .contact__media {
@@ -43,7 +43,6 @@ footer .sns svg {
     }
   }
   .contact__phone-number {
-    font-size: 1rem !important;
     padding-left: 1rem;
     font-weight: 700;
   }

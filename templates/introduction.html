@@ -9,69 +9,46 @@
   <body>
     <div class="too_small">화면이<br />너무작<br />습니다.</div>
     <header>
-      <a href="main.html" class="logo">
-        <div class="logo__img__container">
-          <img src="../img/mklogotp.png" />
-        </div>
-      </a>
+      <div class="upper">
+        <a href="/templates/main.html" class="logo">
+          <div class="logo__img__container">
+            <img src="/img/mklogotp.png" />
+          </div>
+        </a>
 
-      <ul class="menu_bar">
-        <li>
-          <button class="menu-option abtn" onclick="openIntro()">
-            클럽 소개
-          </button>
-        </li>
-        <li>
-          <button class="menu-option abtn" onclick="openEvent()">이벤트</button>
-        </li>
-        <li>
-          <button class="menu-option abtn" onclick="openComu()">
-            커뮤니티
-          </button>
-        </li>
-        <li>
-          <button class="menu-option abtn" onclick="openNotice()">
-            공지 사항
-          </button>
-        </li>
-        <li>
-          <button class="menu-option abtn" onclick="openInquire()">
-            문의 하기
-          </button>
-        </li>
-      </ul>
-      <!--로그인 시 실명과 함께 등장
-      <a
-        class="profile__container span-anchor"
-        href="/account.html>
-        <div class="profile">
-          <div class="profile__username">
-            <span class="span-anchor">Admin1234</span>
-          </div>
-        </div>
-      </a>
-      -->
-      <a class="profile__container span-anchor" href="/templates/login.html">
-        <div class="profile">
-          <div class="profile__img profile__img__login">
-            <svg
-              xmlns="http:/www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 448 512"
-            >
-              <path
-                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
-              />
-            </svg>
-          </div>
-          <div class="profile__username__login">
-            <span>로그인</span>
-          </div>
-        </div></a
-      >
-      <div class="__label">
-        <span>단체 소개</span>
+        <ul class="menu_bar">
+          <li>
+            <button class="menu-option abtn" onclick="openIntro()">
+              클럽 소개
+            </button>
+          </li>
+          <li>
+            <button class="menu-option abtn" onclick="openEvent()">
+              이벤트
+            </button>
+          </li>
+          <li>
+            <button class="menu-option abtn" onclick="openComu()">
+              커뮤니티
+            </button>
+          </li>
+          <li>
+            <button class="menu-option abtn" onclick="openNotice()">
+              공지 사항
+            </button>
+          </li>
+          <li>
+            <button class="menu-option abtn" onclick="openInquire()">
+              문의 하기
+            </button>
+          </li>
+        </ul>
       </div>
+
+      <div class="__label">
+        <span>클럽 소개</span>
+      </div>
+
       <div class="hamburger">
         <svg
           class="hamburger__icon"
@@ -100,18 +77,6 @@
           </svg>
         </div>
         <ul class="mobile-nav-list">
-          <!--로그인 시 보이게
-          <li>
-            <button class="menu-option abtn" onclick="openAccount()">
-              마이 페이지
-            </button>
-          </li>
-        -->
-          <li>
-            <button class="menu-option abtn" onclick="openLogin()">
-              로그인
-            </button>
-          </li>
           <li>
             <button class="menu-option abtn" onclick="openIntro()">
               클럽소개

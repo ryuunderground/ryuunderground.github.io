@@ -1,3 +1,8 @@
+@import "../components/reset.css";
+@import "../components/header.css";
+@import "../components/footer.css";
+@import "../components/hamburger.css";
+
 main {
   display: flex;
   grid-area: 2/1/3/-1;

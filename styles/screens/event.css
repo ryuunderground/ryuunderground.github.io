@@ -12,20 +12,23 @@
 }
 main {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   grid-area: 2/1/3/-1;
   width: 100%;
-  height: 100%;
+  height: 70vh;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  overflow-y: scroll;
 }
-main .ongoing_events {
+main .events {
   display: grid;
   width: 100%;
-  height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  margin: 1rem;
   gap: 1rem;
-  grid-template-columns: 2rem repeat(5, 1fr) 2rem;
-  grid-template-rows: 3rem repeat(2, 1fr) 3rem;
 }
-main .ongoing_events .event__box {
+main .events .event__box {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -33,13 +36,13 @@ main .ongoing_events .event__box {
   align-items: center;
   border: 3px solid black;
 }
-main .ongoing_events .event__box .event__img {
-  width: 12rem;
-  height: 12rem;
+main .events .event__box .event__img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
   margin-top: 1rem;
-  background-color: #000;
 }
-main .ongoing_events .event__box .event__explain {
+main .events .event__box .event__explain {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,19 +50,13 @@ main .ongoing_events .event__box .event__explain {
   width: 12rem;
   padding: 0.5rem 0 1rem;
 }
-main .ongoing_events .event__box .event__explain .event__title {
+main .events .event__box .event__explain .event__title {
   font-weight: 700;
   font-size: 1.7rem;
   margin: 0.3rem;
 }
-main .ongoing_events .event__box .event__explain .event__date {
+main .events .event__box .event__explain .event__date {
   margin-left: 0.5rem;
-}
-main .ongoing_events .event__box:nth-child(1) {
-  grid-area: 2/2/3/3;
-}
-main .ongoing_events .event__box:nth-child(2) {
-  grid-area: 2/3/3/4;
 }
 @media screen and (min-width: 300px) and (max-width: 1023px) {
   body {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magic club Korea - Account</title>
-    <link rel="stylesheet" href="../styles/screens/account.css" />
+    <link rel="stylesheet" href="../styles/screens/account.scss" />
   </head>
   <body>
     <div class="too_small">화면이<br />너무작<br />습니다.</div>
@@ -46,7 +46,7 @@
       </div>
 
       <div class="__label">
-        <span>마이 페이지</span>
+        <span>이벤트</span>
       </div>
 
       <div class="hamburger">
@@ -110,25 +110,33 @@
         <span class="account__title">개인정보 변경하기</span>
         <div class="info__container">
           <span>이전 비밀번호</span>
-          <input type="text" class="password" />
-        </div>
-
-        <div class="info__container">
-          <span>새로운 비밀번호 확인</span>
-          <input type="text" class="password" />
+          <input required type="text" class="pre_pw" />
         </div>
         <div class="info__container">
           <span>새로운 비밀번호</span>
-          <input type="text" class="password" />
+          <input type="password" class="pw" />
+        </div>
+        <div class="info__container">
+          <span>새로운 비밀번호 확인</span>
+          <input type="password" class="pw_check" />
         </div>
         <div class="info__container">
           <span>새로운 전화번호</span>
           <div class="phone-number__container">
-            <input type="text" class="phone-number" maxlength="3" />
+            <span>010 -</span>
+            <input
+              type="text"
+              id="second_phone_number"
+              class="phone-number"
+              maxlength="4"
+            />
             <span>-</span>
-            <input type="text" class="phone-number" maxlength="4" />
-            <span>-</span>
-            <input type="text" class="phone-number" maxlength="4" />
+            <input
+              type="text"
+              id="third_phone_number"
+              class="phone-number"
+              maxlength="4"
+            />
           </div>
         </div>
         <button class="info__button">변경하기</button>
@@ -166,7 +174,8 @@
         </div>
       </div>
     </footer>
-    <script src="../js/hamburger.js"></script>
-    <script src="../js/open.js"></script>
+    <script src="/js/pw_check.js"></script>
+    <script src="/js/hamburger.js"></script>
+    <script src="/js/open.js"></script>
   </body>
 </html>

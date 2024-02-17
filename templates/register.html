@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magic club Korea - Register</title>
-    <link rel="stylesheet" href="../styles/screens/register.css" />
+    <link rel="stylesheet" href="../styles/screens/register.scss" />
   </head>
 
   <body>
     <div class="register__container">
       <div class="user-component">
-        <a href="main.html">
+        <a href="/templates/main.html">
           <div class="logo">
-            <img src="../img/mklogo.png" class="magic_club-logo" />
+            <img src="/img/mklogo.png" class="magic_club-logo" />
           </div>
         </a>
       </div>
@@ -23,26 +23,17 @@
             <h2 class="register__title">회원가입</h2>
           </div>
           <input required type="text" class="username" placeholder="이름" />
-          <input required type="text" class="nickname" placeholder="닉네임" />
           <input required type="text" class="id" placeholder="아이디" />
           <input required type="password" class="pw" placeholder="비밀번호" />
           <input
             required
             type="password"
-            class="pw"
+            class="pw_check"
             placeholder="비밀번호 확인"
           />
           <div class="register__phone-number">
             <span>연락처:</span>
-            <input
-              required
-              type="text"
-              class="phone_number"
-              id="first_phone_number"
-              placeholder="010"
-              maxlength="3"
-              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
-            />
+            <span>010</span>
             -
             <input
               required
@@ -73,9 +64,12 @@
       </div>
       <div class="user-component">
         <span>이미 계정이 있으신가요?</span>
-        <a href="login.html" class="span-anchor"><span>로그인 하기</span></a>
+        <a href="/templates/login.html" class="span-anchor"
+          ><span>로그인 하기</span></a
+        >
       </div>
     </div>
+    <script src="../js/pw_check.js"></script>
     <script src="../js/register.js"></script>
     <script src="../js/age_check.js"></script>
   </body>

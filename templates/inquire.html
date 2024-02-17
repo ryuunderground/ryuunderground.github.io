@@ -4,51 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magic Club Korea - 문의 하기</title>
-    <link rel="stylesheet" href="../styles/screens/inquire.css" />
+    <link rel="stylesheet" href="../styles/screens/inquire.scss" />
   </head>
   <body>
     <div class="too_small">화면이<br />너무작<br />습니다.</div>
     <header>
-      <div class="upper">
-        <a href="/templates/main.html" class="logo">
-          <div class="logo__img__container">
-            <img src="/img/mklogotp.png" />
+      <a href="/templates/main.html" class="logo">
+        <div class="logo__img__container">
+          <img src="/img/new_logo_nobackground.png" />
+        </div>
+      </a>
+
+      <ul class="menu_bar">
+        <li>
+          <button class="menu-option abtn" onclick="openIntro()">
+            클럽 소개
+          </button>
+        </li>
+        <li>
+          <button class="menu-option abtn" onclick="openEvent()">이벤트</button>
+        </li>
+        <li>
+          <button class="menu-option abtn" onclick="openComu()">
+            커뮤니티
+          </button>
+        </li>
+        <li>
+          <button class="menu-option abtn" onclick="openNotice()">
+            공지 사항
+          </button>
+        </li>
+        <li>
+          <button class="menu-option abtn" onclick="openInquire()">
+            문의 하기
+          </button>
+        </li>
+      </ul>
+      <!--로그인 시 실명과 함께 등장
+      <a
+        class="profile__container span-anchor"
+        href="/account.html>
+        <div class="profile">
+          <div class="profile__username">
+            <span class="span-anchor">Admin1234</span>
           </div>
-        </a>
-
-        <ul class="menu_bar">
-          <li>
-            <button class="menu-option abtn" onclick="openIntro()">
-              클럽 소개
-            </button>
-          </li>
-          <li>
-            <button class="menu-option abtn" onclick="openEvent()">
-              이벤트
-            </button>
-          </li>
-          <li>
-            <button class="menu-option abtn" onclick="openComu()">
-              커뮤니티
-            </button>
-          </li>
-          <li>
-            <button class="menu-option abtn" onclick="openNotice()">
-              공지 사항
-            </button>
-          </li>
-          <li>
-            <button class="menu-option abtn" onclick="openInquire()">
-              문의 하기
-            </button>
-          </li>
-        </ul>
-      </div>
-
+        </div>
+      </a>
+      -->
+      <a class="profile__container span-anchor" href="/templates/login.html">
+        <div class="profile">
+          <div class="profile__img profile__img__login">
+            <svg
+              xmlns="http:/www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
+              />
+            </svg>
+          </div>
+          <div class="profile__username__login">
+            <span>로그인</span>
+          </div>
+        </div></a
+      >
       <div class="__label">
         <span>문의 하기</span>
       </div>
-
       <div class="hamburger">
         <svg
           class="hamburger__icon"
@@ -77,6 +100,18 @@
           </svg>
         </div>
         <ul class="mobile-nav-list">
+          <!--로그인 시 보이게
+          <li>
+            <button class="menu-option abtn" onclick="openAccount()">
+              마이 페이지
+            </button>
+          </li>
+        -->
+          <li>
+            <button class="menu-option abtn" onclick="openLogin()">
+              로그인
+            </button>
+          </li>
           <li>
             <button class="menu-option abtn" onclick="openIntro()">
               클럽소개
@@ -105,7 +140,6 @@
         </ul>
       </div>
     </header>
-
     <main>
       <form
         class="gform"
@@ -115,36 +149,39 @@
       >
         <div class="form-elements">
           <div class="title_and_contents">
-            <span class="inquire__title">문의 하기</span>
+            <span class="inquire__title">문의 보내기</span>
             <p class="inquire__contents">
               문의는 기본적으로 메일로 받고 있습니다.<br />인스타그램 DM으로
               문의주시면 더 빠른 답변이 가능합니다.<br />인스타그램:
               @magic_club.korea
             </p>
           </div>
+          <fieldset class="pure-group">
+            <label for="name">이름: </label>
+            <input id="name" name="name" placeholder="문의자님 성함" />
+          </fieldset>
 
-          <div class="inquire__info">
-            <fieldset class="pure-group fieldset__name">
-              <label for="name">이름: </label>
-              <input id="name" name="name" placeholder="문의자님 성함" />
-            </fieldset>
-
-            <fieldset class="pure-group fieldset__email">
-              <label for="email">Email: </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                value=""
-                required
-                placeholder="your.name@email.com"
-              />
-            </fieldset>
-            <span class="within-a-day">
-              문의 답변은 24시간 내에<br />적어주신 메일로 답변드립니다.
-            </span>
-          </div>
-
+          <fieldset class="pure-group">
+            <label for="email">Email: </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              value=""
+              required
+              placeholder="your.name@email.com"
+            />
+          </fieldset>
+          <span class="within-a-day"
+            >문의 답변은 24시간 내에<br />적어주신 메일로 답변드립니다.</span
+          >
+          <fieldset class="pure-group honeypot-field">
+            <label for="honeypot"
+              >스팸 방지용 공란입니다. <br />해당 빈칸은
+              비워져있어야합니다.</label
+            >
+            <input id="honeypot" type="text" name="honeypot" value="" />
+          </fieldset>
           <fieldset class="pure-group writing-inquire">
             <label for="message">문의 내용: </label>
             <textarea
@@ -152,23 +189,12 @@
               name="message"
               rows="10"
               placeholder="문의하실 내용을 적어주세요."
-            >
-            </textarea>
+            ></textarea>
           </fieldset>
 
-          <div class="form__etc">
-            <fieldset class="pure-group honeypot-field">
-              <label for="honeypot">
-                스팸 방지용 공란입니다. <br />해당 빈칸은 비워져있어야합니다.
-              </label>
-              <input id="honeypot" type="text" name="honeypot" value="" />
-            </fieldset>
-            <div class="btn_container">
-              <button class="button-success pure-button button-xlarge">
-                <i class="fa fa-paper-plane"></i>&nbsp;문의 보내기
-              </button>
-            </div>
-          </div>
+          <button class="button-success pure-button button-xlarge">
+            <i class="fa fa-paper-plane"></i>&nbsp;문의 보내기
+          </button>
         </div>
 
         <div style="display: none" class="thankyou_message">
@@ -180,10 +206,12 @@
         </div>
       </form>
     </main>
-
     <footer>
       <div class="contact">
+        <!-- 추후 정식 번호 추가하기
         <span class="contact__phone-number"> TEL: 010-6324-6912</span>
+        -->
+        <span>Social Media</span>
         <div class="contact__sns">
           <button onclick="openInsta()" class="contact__media">
             <svg

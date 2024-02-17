@@ -12,6 +12,7 @@ header {
   display: grid;
   width: 100%;
   height: 9rem;
+  grid-template-columns: 10rem 1fr 12rem;
   grid-template-rows: 2fr 1fr;
   border: 1px solid gray;
   position: fixed;
@@ -19,39 +20,40 @@ header {
   grid-area: 1/1/2/2;
   z-index: 99;
 }
-header .upper {
+header .logo {
+  width: 100%;
+  height: 100%;
   grid-area: 1/1/2/2;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1rem;
+  position: relative;
 }
-header .upper .logo .logo__img__container {
+header .logo .logo__img__container {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-header .upper .logo .logo__img__container img {
+header .logo .logo__img__container img {
   width: 5.5rem;
   height: 5.5rem;
   max-height: 150px;
+  position: absolute;
+  right: 0.6rem;
 }
-header .upper .menu_bar {
+header .menu_bar {
   display: flex;
   flex-direction: row;
   grid-area: 1/2/2/-2;
   justify-content: space-evenly;
   align-items: center;
-  gap: 1.5rem;
 }
-header .upper .profile__container {
+header .profile__container {
   display: flex;
   grid-area: 1/-2/2/-1;
   justify-content: center;
   align-items: center;
 }
-header .upper .profile__container .profile {
+header .profile__container .profile {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -91,19 +93,24 @@ header .__label {
     grid-template-columns: 150px 1fr 100px;
     grid-template-rows: 1fr 3rem;
   }
-  header .upper .logo {
+  header .__label {
+    grid-area: 2/1/-1/-1;
+  }
+  header .logo {
     grid-area: 1/1/2/2;
   }
-  header .upper .logo .logo__img__container {
+  header .logo .logo__img__container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  header .upper .menu_bar {
-    display: none;
+  header .logo .logo__img__container img {
+    width: 110px;
+    height: 110px;
   }
-  header .__label {
-    grid-area: 2/1/-1/-1;
+  header .menu_bar,
+  header .profile__container {
+    display: none;
   }
   header .hamburger {
     display: flex;

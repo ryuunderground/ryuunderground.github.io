@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: column;
+        width: 700px;
+      }
+      .vivid {
+        width: 300px;
+        height: 100px;
+        border: 2px solid black;
+      }
+
+      .color:first-child .vivid {
+        background-color: #fdfbe8;
+      }
+
+      .color:nth-child(2) .vivid {
+        background-color: #eecca2;
+      }
+
+      .color:nth-child(3) .vivid {
+        background-color: #be8453;
+      }
+
+      .color:nth-child(4) .vivid {
+        background-color: #c73b22;
+      }
+
+      .color:nth-child(5) .vivid {
+        background-color: #230f07;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color">
+      <span class="name">cream(#fdfbe8)</span>
+      <div class="vivid"></div>
+    </div>
+    <div class="color">
+      <span class="name">light box(#eecca2)</span>
+      <div class="vivid"></div>
+    </div>
+    <div class="color">
+      <span class="name">hard box(#be8453)</span>
+      <div class="vivid"></div>
+    </div>
+    <div class="color">
+      <span class="name">red tape(#c73b22)</span>
+      <div class="vivid"></div>
+    </div>
+    <div class="color">
+      <span class="name">dark tape(#230f07)</span>
+      <div class="vivid"></div>
+    </div>
+  </body>
+</html>

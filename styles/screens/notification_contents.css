@@ -48,3 +48,27 @@ h3 {
 h4 {
   font-size: 1.2rem;
 }
+@media screen and (min-width: 300px) and (max-width: 1023px) {
+  .main-content {
+    width: 80% !important;
+  }
+  .main-content .content__title {
+    font-size: 2rem !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-content .content__paragraph {
+    padding: 0 1rem !important;
+    word-break: break-all;
+  }
+}
+h2 {
+  font-size: 1.3rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 1rem;
+}

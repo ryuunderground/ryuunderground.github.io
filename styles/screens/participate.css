@@ -72,6 +72,8 @@ main .form .form__contents .form__assign {
   flex-direction: column;
   gap: 0.5rem;
   justify-content: flex-start;
+  /*위 flex-start 개시 할 땐 flex-end로*/
+  padding-top: 1.5rem;
 }
 main .form .form__contents .form__assign fieldset {
   max-height: 10rem;

@@ -67,7 +67,7 @@ function handleFormSubmit(event) {
     return false;
   }
 
-  // disableAllButtons(form);
+  /* // disableAllButtons(form);
   var url = form.action;
   var xhr = new XMLHttpRequest();
   xhr.open("POST", url);
@@ -85,7 +85,7 @@ function handleFormSubmit(event) {
         thankYouMessage.style.display = "block";
       }
     }
-  };
+  };*/
   // url encode form data for sending as post data
   var encoded = Object.keys(data)
     .map(function (k) {

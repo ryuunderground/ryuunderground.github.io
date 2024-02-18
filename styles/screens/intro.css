@@ -60,13 +60,13 @@ main .slideshow-container .slide .text-container {
 }
 main .slideshow-container .slide .text-container .intro__title {
   display: none;
-  margin: 0.5rem;
+  margin: 2rem;
   font-size: 3.5rem;
   font-weight: 700;
 }
 main .slideshow-container .slide .text-container .intro__contents {
   display: none;
-  margin: 0.5rem;
+  margin: 3rem 2rem;
   font-size: 1.5rem;
 }
 main .slideshow-container .slide .text-container .go_to_register {
@@ -91,6 +91,7 @@ main .slideshow-container .slide .rdimg {
   grid-area: 1/1/2/2;
   width: 300px;
   height: 300px;
+  padding: 50px;
 }
 main .slideshow-container .slide .rdimg img {
   width: 300px;
@@ -138,8 +139,8 @@ main .slideshow-container .slide .rdimg img {
   }
   .slideshow-container .slide .icon .slide__logo {
     padding: 1rem;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 250px;
+    max-height: 250px;
   }
   .slideshow-container .slide .icon .rdimg {
     width: 100%;
@@ -147,8 +148,8 @@ main .slideshow-container .slide .rdimg img {
   }
   .slideshow-container .slide .icon .rdimg img {
     padding: 1rem;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 250px;
+    max-height: 250px;
   }
   .slideshow-container .slide .text-container {
     display: grid;

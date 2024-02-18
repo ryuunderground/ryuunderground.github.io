@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>진행중인 이벤트</title>
-    <link rel="stylesheet" href="../styles/screens/event.scss" />
+    <title>Magic club Korea - 4월 렉쳐</title>
+    <link rel="stylesheet" href="../styles/screens/participate.css" />
   </head>
   <body>
     <div class="too_small">화면이<br />너무작<br />습니다.</div>
@@ -12,7 +12,7 @@
       <div class="upper">
         <a href="/templates/main.html" class="logo">
           <div class="logo__img__container">
-            <img src="/img/mklogotp.png" />
+            <img src="/img/new_logo_nobackground.png" />
           </div>
         </a>
 
@@ -105,46 +105,87 @@
         </ul>
       </div>
     </header>
-
     <main>
-      <div class="events">
-        <div class="event__box">
-          <a class="span-anchor" href="./febuary.html">
-            <img class="event__img" src="../img/stws.jpeg" />
-            <div class="event__explain">
-              <h2 class="event__title">Stage Workshop</h2>
-              <h3 class="event__date">2024.02.25</h3>
-            </div>
-          </a>
+      <form class="form">
+        <!-- 마감 시 주석 치우기
+        <div class="overlay">
+          <span>마감된 행사입니다.</span>
         </div>
-        <div class="event__box">
-          <a class="span-anchor" href="./march_party.html">
-            <img class="event__img" src="../img/coming.png" />
-            <div class="event__explain">
-              <h2 class="event__title">파티-인별 마술</h2>
-              <h3 class="event__date">2024.03.??</h3>
+        -->
+        <span class="form__title">매직클럽 렉쳐 - 빛빛빛</span>
+        <div class="form__contents">
+          <div class="form__event">
+            <div class="form__event-img">
+              <img src="../img/coming.png" />
             </div>
-          </a>
-        </div>
-        <div class="event__box">
-          <a class="span-anchor" href="./april.html">
-            <img class="event__img" src="../img/coming.png" />
-            <div class="event__explain">
-              <h2 class="event__title">매직클럽 렉쳐</h2>
-              <h3 class="event__date">2024.04.??</h3>
+            <div class="form__event-info">
+              <p>
+                장소 : 미정
+                <br />
+                대상 : 미정
+                <br />
+                일시 : 4월 중순?
+                <br />
+                가격 : 계산기를 두드리는 중
+              </p>
             </div>
-          </a>
+          </div>
+
+          <div class="form__text">
+            <p>
+              관객의 감정변화를 더 가까이서 볼 수 있다는 점에서 클로즈업은
+              매력적인 장르입니다.<br />
+              접근성도 좋고, 요즘 유행이기도 하니 도전할 가치가 충분하죠. 그런데
+              말입니다....<br /><br />
+              이왕 배워서 연습할 거 잘하는 사람에게 배웁시다!<br />
+              이야 이게 참 좋은데 말을 할 수가 없네.
+            </p>
+          </div>
+
+          <div class="form__assign">
+            <span> 개, 발, 자. 셋이서 예약 시스템 개발 중입니다. </span>
+            <!--
+            <fieldset class="pure-group fieldset__name">
+              <label for="name">참여자 이름: </label>
+              <ul class="assign_list">
+                <li class="person-container">
+                  <input
+                    required
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="홍길동"
+                  />
+                  <button class="add_person">﹢</button>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="pure-group fieldset__person">
+              <label for="name">참여 인원: </label>
+              <input
+                required
+                id="person"
+                name="person"
+                type="number"
+                placeholder="1"
+              />
+            </fieldset>
+            <fieldset class="pure-group fieldset__agree">
+              <label for="name"
+                >장소, 일시, 가격, 환불 규정 등, 매직 클럽은 개인의 규정
+                미숙지로 인한 불이익은 책임지지 않습니다.
+              </label>
+              <div class="agree-btn">
+                <input required id="agree" name="agree" type="checkbox" />
+                <span>동의합니다.</span>
+              </div>
+            </fieldset>
+            <div class="event__btn-container">
+              <input type="submit" class="event__btn" value="신청 하기" />
+            </div>-->
+          </div>
         </div>
-        <div class="event__box">
-          <a class="span-anchor" href="./may.html">
-            <img class="event__img" src="../img/coming.png" />
-            <div class="event__explain">
-              <h2 class="event__title">매직클럽 기획공연</h2>
-              <h3 class="event__date">2024.05.25? 26?</h3>
-            </div>
-          </a>
-        </div>
-      </div>
+      </form>
     </main>
 
     <footer>
@@ -181,6 +222,7 @@
         </div>
       </div>
     </footer>
+    <script src="../js/event_person.js"></script>
     <script src="/js/hamburger.js"></script>
     <script src="/js/open.js"></script>
   </body>

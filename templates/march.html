@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Magic club Korea - Account</title>
-    <link rel="stylesheet" href="../styles/screens/mtsw.css" />
+    <title>Magic club Korea - 3월 파티</title>
+    <link rel="stylesheet" href="../styles/screens/participate.css" />
   </head>
   <body>
     <div class="too_small">화면이<br />너무작<br />습니다.</div>
@@ -107,85 +107,80 @@
     </header>
     <main>
       <form class="form">
-        <span class="form__title"
-          >문엔트리 x 매직클럽 Korea STAGE Workshop</span
-        >
-
-        <div class="form__event">
-          <div class="form__event-img">
-            <img src="../img/stws.jpeg" />
+        <!-- 마감 시 주석 치우기
+        <div class="overlay">
+          <span>마감된 행사입니다.</span>
+        </div>
+        -->
+        <span class="form__title">매직클럽 파티 - 온라인 마술</span>
+        <div class="form__contents">
+          <div class="form__event">
+            <div class="form__event-img">
+              <img src="../img/coming.png" />
+            </div>
+            <div class="form__event-info">
+              <p>
+                장소 : 미정
+                <br />
+                대상 : 미정
+                <br />
+                일시 : 3월 말
+                <br />
+                가격 : 15,000 이하...로 노력 중
+              </p>
+            </div>
           </div>
-          <div class="form__event-info">
+
+          <div class="form__text">
             <p>
-              장소 : 건대 블라인드 아트홀
-              <br />
-              대상 : 대학생(선착순 40명)
-              <br />
-              일시 : 2024.2.25 일요일 오후 2시-6시
+              마술을 잘 몰라도 마술로 놀 수 있는 행사를 기획 중입니다.<br /><br />
+              거 인스타 계정에 마술 하나 정돈 괜찮잖아.<br />
+              블랙 아트, 카메라 트릭 등 릴스, 숏츠에서 보았던 바로 그 마술!<br /><br />
+              여러분들 휴대폰에 담아가시길 바랍니다.
             </p>
           </div>
-        </div>
 
-        <div class="form__text">
-          <p>
-            최근들어 다양한 클로즈업 컨텐츠가 만들어지고 또 유행하고 있습니다.
-            아무래도 팬데믹에 영향이 커지고 우리는 무대를 잃었기 때문일 겁니다.
-            <br />
-            그만큼 점점 무대 위에 빛나는 그 아름다운 시간들이 잊혀져버린지
-            오래입니다.
-            <br />
-            이제 모든 것이 정상화되었고 우리는 그 자리를 되찾을 필요가 있습니다.
-            <br />
-            <br />
-            그래서 정말 찐하게 준비했습니다, 오직 무대마술을 위한 A to Z를 이
-            워크샵에 담아보기로 그리고 그 시간을 여러분들과 공유하도록
-            하겠습니다.
-            <br />
-            한번도 해본 적이 없어도, 관심이 없어도 보는 것만으로도 즐거운 시간이
-            될 거에요.
-            <br />
-            그만큼 매력적인 장르니까요.
-            <br />
-            <br />
-            어떤 것을 다룰지에 대해선 설명하지 않겠습니다, 정말 많은 것들이
-            여러분들을 기다리고 있을거에요.
-          </p>
-        </div>
-
-        <div class="form__assign">
-          <fieldset class="pure-group fieldset__name">
-            <label for="name">참여자 이름: </label>
-            <input
-              required
-              id="name"
-              name="name"
-              type="text"
-              placeholder="홍길동"
-            />
-            <button>+</button>
-          </fieldset>
-          <fieldset class="pure-group fieldset__person">
-            <label for="name">참여 인원: </label>
-            <input
-              required
-              id="person"
-              name="person"
-              type="number"
-              placeholder="1"
-            />
-          </fieldset>
-          <fieldset class="pure-group fieldset__agree">
-            <label for="name"
-              >장소, 일시, 가격, 환불 규정 등, 매직 클럽은 개인의 규정 미숙지로
-              인한 불이익은 책임지지 않습니다.
-            </label>
-            <div class="agree-btn">
-              <input required id="agree" name="agree" type="checkbox" />
-              <span>동의합니다.</span>
-            </div>
-          </fieldset>
-          <div class="event__btn-container">
-            <input type="submit" class="event__btn" value="신청 하기" />
+          <div class="form__assign">
+            <span> 개, 발, 자. 셋이서 예약 시스템 개발 중입니다. </span>
+            <!--
+            <fieldset class="pure-group fieldset__name">
+              <label for="name">참여자 이름: </label>
+              <ul class="assign_list">
+                <li class="person-container">
+                  <input
+                    required
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="홍길동"
+                  />
+                  <button class="add_person">﹢</button>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="pure-group fieldset__person">
+              <label for="name">참여 인원: </label>
+              <input
+                required
+                id="person"
+                name="person"
+                type="number"
+                placeholder="1"
+              />
+            </fieldset>
+            <fieldset class="pure-group fieldset__agree">
+              <label for="name"
+                >장소, 일시, 가격, 환불 규정 등, 매직 클럽은 개인의 규정
+                미숙지로 인한 불이익은 책임지지 않습니다.
+              </label>
+              <div class="agree-btn">
+                <input required id="agree" name="agree" type="checkbox" />
+                <span>동의합니다.</span>
+              </div>
+            </fieldset>
+            <div class="event__btn-container">
+              <input type="submit" class="event__btn" value="신청 하기" />
+            </div>-->
           </div>
         </div>
       </form>
@@ -225,7 +220,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="../js/event_person.js"></script>
     <script src="/js/hamburger.js"></script>
     <script src="/js/open.js"></script>
   </body>

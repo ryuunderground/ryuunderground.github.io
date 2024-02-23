@@ -1,0 +1,66 @@
+@import "../components/reset.css";
+@import "../components/header.css";
+@import "../components/footer.css";
+@import "../components/resizing.css";
+@import "../components/hamburger.css";
+
+main {
+  display: flex;
+  grid-area: 2/1/3/-1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .account_info {
+  display: grid;
+  grid-template-rows: 15% repeat(5, 1fr) 10%;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  background-color: var(--beige);
+  border: 2px solid var(--dark_brown);
+  width: 50rem;
+  height: 20rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+main .account_info .account__title {
+  font-weight: 700;
+  font-size: 2rem;
+  grid-area: 1/1/3/3;
+  display: flex;
+  padding: 0.5rem;
+}
+main .account_info .info__button {
+  grid-area: 6/1/-1/-1;
+  height: 2.5rem;
+}
+main .info__container {
+  display: flex;
+  flex-direction: column;
+}
+main .info__container span {
+  min-width: 7rem;
+}
+main .info__container input {
+  width: 20rem;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+}
+.phone-number {
+  max-width: 3rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1023px) {
+  body main {
+    padding: 5rem 0 1rem;
+    width: 100vw;
+  }
+  body main .account_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+  }
+}

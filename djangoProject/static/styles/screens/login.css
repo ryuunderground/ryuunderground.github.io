@@ -1,0 +1,57 @@
+@import "../components/reset.css";
+
+header {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  position: relative;
+}
+header .instagram {
+  display: flex;
+  position: absolute;
+  left: 3rem;
+  top: 2rem;
+}
+header .instagram a svg {
+  width: 5rem;
+  height: 5rem;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+body .user-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+body .user-component .magic_club-logo {
+  display: flex;
+  width: 22rem;
+}
+body .user-component .login-form {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+body .user-component .login-form * {
+  margin: 0.2rem;
+  padding: 0.5rem 0.3rem;
+}
+body .user-component .login-form .login {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+body .user-component:nth-child(4) {
+  gap: 1rem;
+}
+body .user-component:nth-child(4) span:first-child {
+  opacity: 0.7;
+}
+body .user-component:nth-child(4) a span {
+  font-weight: 800;
+  font-size: large;
+}

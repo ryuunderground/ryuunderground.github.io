@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
     'www.magicclub.shop',
     'magicclub.kr',
     'www.magicclub.kr',
+    '172.31.45.203',
 ]
 
 

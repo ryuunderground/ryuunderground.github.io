@@ -8,6 +8,8 @@ urlpatterns = [
     path("event/", views.events_on, name="events_on"),
     path("community/", views.community, name="community"),
     path("notifications/", views.notification, name="notifications"),
+    path("notifications/rule", views.notification_rule, name="notifications_rule"),
+
     path("inquire/", views.inquire, name="inquire"),
 
     path("event/febuary/", views.events_feb, name="event_febuary"),

@@ -26,6 +26,8 @@ def community(request):
 
 def notification(request):
     return render(request, "notification.html")
+def notification_rule(request):
+    return render(request, "notification_rule.html")
 
 def inquire(request):
     return render(request, "inquire.html")

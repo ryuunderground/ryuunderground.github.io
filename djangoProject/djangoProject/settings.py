@@ -26,8 +26,10 @@ SECRET_KEY = "django-insecure-30kk4x1j@krei_&xxbx8v0f@u8378&*j((vrg9-6pyffv(-442
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     '.ap-northeast-2.compute.amazonaws.com',
     'magicclub.shop',
+    'www.magicclub.shop',
 ]
 
 

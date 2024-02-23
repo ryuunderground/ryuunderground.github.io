@@ -8,62 +8,48 @@
 
 {% block add_nav %}
     <div class="__label">
-        <span class="page_in_now">진행중인 이벤트</span>
-        <a href={% url "events_done" %} class="event_anchor">
-          <span>지난 이벤트</span></a
-        >
-        <button class="upload display-none">작성하기</button>
-      </div>
+        <span>이벤트</span>
+    </div>
 {% endblock %}
 
 {% block content %}
     <main>
-      <div class="ongoing_events">
+      <div class="events">
         <div class="event__box">
-          <a class="span-anchor" href="https://forms.gle/edhvSqTjuxUtWpw18">
-            <div class="event__img" src="#"></div>
+          <a class="span-anchor" href={% url 'event_febuary' %}>
+            <img class="event__img" src={% static "img/stws.jpeg" %}/>
             <div class="event__explain">
-              <h2 class="event__title">ON-Parlor</h2>
-              <h3 class="event__date">2023.01.13</h3>
+              <h2 class="event__title">Stage Workshop</h2>
+              <h3 class="event__date">2024.02.25</h3>
             </div>
           </a>
         </div>
-
         <div class="event__box">
-          <a class="span-anchor" href="https://forms.gle/edhvSqTjuxUtWpw18">
-            <div class="event__img" src="#"></div>
+          <a class="span-anchor" href={% url 'event_march' %}>
+            <img class="event__img" src={% static "img/coming.png" %}/>
             <div class="event__explain">
-              <h2 class="event__title">ON-Stage</h2>
-              <h3 class="event__date">2023.??.??</h3>
+              <h2 class="event__title">파티-인별 마술</h2>
+              <h3 class="event__date">2024.03.??</h3>
             </div>
           </a>
         </div>
-        <div class="pagination__container">
-          <div class="pagination">
-            <svg
-              class="pagination__left-chevron display-none"
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 320 512"
-            >
-              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <path
-                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
-              />
-            </svg>
-            <div class="page_1">1</div>
-            <svg
-              class="pagination__right-chevron display-none"
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 320 512"
-            >
-              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <path
-                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-              />
-            </svg>
-          </div>
+        <div class="event__box">
+          <a class="span-anchor" href={% url 'event_april' %}>
+            <img class="event__img" src={% static "img/coming.png" %}/>
+            <div class="event__explain">
+              <h2 class="event__title">매직클럽 렉쳐 - 빛빛빛</h2>
+              <h3 class="event__date">2024.04.??</h3>
+            </div>
+          </a>
+        </div>
+        <div class="event__box">
+          <a class="span-anchor" href={% url 'event_may' %}>
+            <img class="event__img" src={% static "img/coming.png" %}/>
+            <div class="event__explain">
+              <h2 class="event__title">매직클럽 기획공연</h2>
+              <h3 class="event__date">2024.05.25? 26?</h3>
+            </div>
+          </a>
         </div>
       </div>
     </main>

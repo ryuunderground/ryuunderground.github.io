@@ -1,50 +1,48 @@
 @import "../components/reset.css";
 @import "../components/header.css";
 @import "../components/footer.css";
-@import "../components/resizing.css";
 @import "../components/hamburger.css";
 
 .__label {
   gap: 1rem;
 }
 .__label .event_anchor {
-  color: var(--beige);
+  color: #fff;
   text-decoration: none;
 }
 main {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   grid-area: 2/1/3/-1;
   width: 100%;
-  height: 100%;
+  height: 70vh;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  overflow-y: scroll;
 }
-main .ongoing_events {
+main .events {
   display: grid;
   width: 100%;
-  height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  margin: 1rem;
   gap: 1rem;
-  grid-template-columns: 2rem repeat(5, 1fr) 2rem;
-  grid-template-rows: 3rem repeat(2, 1fr) 3rem;
 }
-main .ongoing_events .event__box {
+main .events .event__box {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 3px solid black;
 }
-main .ongoing_events .event__box .event__img {
-  width: 12rem;
-  height: 12rem;
+main .events .event__box .event__img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
   margin-top: 1rem;
-  background-color: black;
 }
-.event__img img {
-  width: 12rem;
-  height: 12rem;
-  object-fit: contain;
-}
-main .ongoing_events .event__box .event__explain {
+main .events .event__box .event__explain {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,51 +50,13 @@ main .ongoing_events .event__box .event__explain {
   width: 12rem;
   padding: 0.5rem 0 1rem;
 }
-main .ongoing_events .event__box .event__explain .event__title {
+main .events .event__box .event__explain .event__title {
   font-weight: 700;
   font-size: 1.7rem;
   margin: 0.3rem;
 }
-main .ongoing_events .event__box .event__explain .event__date {
+main .events .event__box .event__explain .event__date {
   margin-left: 0.5rem;
-}
-main .ongoing_events .event__box:first-child {
-  grid-area: 2/2/3/3;
-}
-main .ongoing_events .event__box:nth-child(2) {
-  grid-area: 2/3/3/4;
-}
-main .ongoing_events .event__box:nth-child(3) {
-  grid-area: 2/4/3/5;
-}
-main .ongoing_events .event__box:nth-child(4) {
-  grid-area: 2/5/3/6;
-}
-main .ongoing_events .event__box:nth-child(5) {
-  grid-area: 2/6/3/7;
-}
-main .ongoing_events .pagination__container {
-  display: flex;
-  grid-area: -2/1/-1/-1;
-  justify-content: center;
-  align-items: center;
-}
-main .ongoing_events .pagination__container .pagination {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-}
-main .ongoing_events .pagination__container .pagination .page_1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  background-color: var(--beige);
-  border: 1px solid var(--dark_brown);
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
 }
 @media screen and (min-width: 300px) and (max-width: 1023px) {
   body {
@@ -104,7 +64,6 @@ main .ongoing_events .pagination__container .pagination .page_1 {
     height: auto;
   }
   body main {
-    padding-top: 4rem;
     width: 100vw;
   }
   body main .ongoing_events {
@@ -115,9 +74,6 @@ main .ongoing_events .pagination__container .pagination .page_1 {
   }
   body main .ongoing_events .event__box {
     width: 75%;
-  }
-  body main .pagination__container {
-    margin-bottom: 3rem;
   }
   body footer {
     margin-top: 5rem;

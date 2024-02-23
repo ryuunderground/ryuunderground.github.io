@@ -1,0 +1,230 @@
+@import "../components/reset.css";
+@import "../components/header.css";
+@import "../components/footer.css";
+@import "../components/hamburger.css";
+
+main {
+  display: flex;
+  grid-area: 2/1/3/-1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .form {
+  border: 2px solid #331224;
+  width: 60rem;
+  height: 20rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  overflow: hidden;
+  position: relative;
+}
+main .form .overlay {
+  pointer-events: auto;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .form .overlay span {
+  color: #fff;
+  font-weight: 800;
+  font-size: 6rem;
+  background-color: #000;
+  text-align: center;
+  word-break: keep-all;
+}
+main .form .form__title {
+  grid-area: 1/1/2/-1;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+}
+main .form .form__contents {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 0.75fr;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+main .form .form__contents .form__event {
+  grid-area: 2/1/-1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .form .form__contents .form__event .form__event-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  width: 250px;
+  height: 250px;
+}
+main .form .form__contents .form__event .form__event-img img {
+  width: 100%;
+  margin: 1rem;
+}
+main .form .form__contents .form__event .form__event-info {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+main .form .form__contents .form__text {
+  grid-area: 2/2/-1/3;
+  margin-top: 1.7rem;
+  font-size: 1rem;
+  overflow-y: scroll;
+}
+main .form .form__contents .form__assign {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+main .form .form__contents .form__assign fieldset {
+  max-height: 10rem;
+  overflow-y: auto;
+}
+main .form .form__contents .form__assign fieldset label {
+  font-size: 1.2rem;
+}
+main
+  .form
+  .form__contents
+  .form__assign
+  fieldset
+  .assign_list
+  .person-container
+  input {
+  height: 1.2rem;
+}
+main .form .form__contents .form__assign .fieldset__agree * {
+  font-size: 1rem;
+}
+main .form .form__contents .form__assign .fieldset__agree .agree-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+main .form .form__contents .form__assign .event__btn-container {
+  display: flex;
+  justify-content: center;
+}
+main .form .form__contents .form__assign .event__btn-container .event__btn {
+  height: 2rem;
+  width: 75%;
+}
+@media screen and (min-width: 300px) and (max-width: 1023px) {
+  body {
+    width: 100vw;
+  }
+  body main {
+    width: 100%;
+  }
+  body main .form {
+    width: 80%;
+    overflow-y: auto;
+    grid-template-columns: 1fr;
+  }
+  body main .form .overlay span {
+    width: 60%;
+    font-size: 3rem;
+    min-width: 250px;
+  }
+  body main .form .form__title {
+    padding-left: 0;
+    font-size: 2rem;
+    width: 100%;
+  }
+  body main .form .form__contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  body main .form .form__contents .form__event {
+    justify-content: center;
+    min-width: 250px;
+  }
+  body main .form .form__contents .form__event .form__event-img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .form .form__contents .form__text {
+    width: 15rem;
+    height: 12rem;
+    margin: 0;
+    padding-top: 1rem;
+    border-top: 2px solid black;
+  }
+  body main .form .form__contents .form__assign {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: 3/1/-1/-1;
+    flex-direction: row;
+    padding-top: 1rem;
+    border-top: 2px solid black;
+    position: relative;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  body main .form .form__contents .form__assign .fieldset__name,
+  body main .form .form__contents .form__assign .fieldset__person {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 40%;
+    max-height: 7rem;
+    overflow: hidden;
+  }
+  body main .form .form__contents .form__assign .fieldset__name .assign_list,
+  body main .form .form__contents .form__assign .fieldset__person .assign_list {
+    padding: 5px;
+    height: 100%;
+    overflow: scroll;
+  }
+  body
+    main
+    .form
+    .form__contents
+    .form__assign
+    .fieldset__name
+    .assign_list
+    .person-container
+    input,
+  body
+    main
+    .form
+    .form__contents
+    .form__assign
+    .fieldset__person
+    .assign_list
+    .person-container
+    input {
+    width: 5rem;
+  }
+  body main .form .form__contents .form__assign .fieldset__agree {
+    margin-bottom: 1rem;
+  }
+  body main .form .form__contents .form__assign .event__btn-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  body main .form .form__contents .form__assign .event__btn-container input {
+    min-width: 5rem !important;
+  }
+}

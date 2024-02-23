@@ -12,8 +12,15 @@ def introduction(request):
 
 def events_on(request):
     return render(request, 'event_ongoing.html')
-def events_done(request):
-    return render(request, 'event_done.html')
+def events_feb(request):
+    return render(request, 'febuary.html')
+def events_mar(request):
+    return render(request, 'march.html')
+def events_apr(request):
+    return render(request, 'april.html')
+def events_may(request):
+    return render(request, 'may.html')
+
 def community(request):
     return HttpResponse("KakaoTalk link")
 

@@ -1,7 +1,6 @@
 @import "../components/reset.css";
 @import "../components/header.css";
 @import "../components/footer.css";
-@import "../components/resizing.css";
 @import "../components/hamburger.css";
 
 main {
@@ -16,8 +15,8 @@ main .account_info {
   grid-template-rows: 15% repeat(5, 1fr) 10%;
   grid-template-columns: repeat(2, 1fr);
   flex-direction: column;
-  background-color: var(--beige);
-  border: 2px solid var(--dark_brown);
+  background-color: #fff;
+  border: 2px solid #331224;
   width: 50rem;
   height: 20rem;
   padding: 1rem;
@@ -49,8 +48,11 @@ main .info__container input {
 .phone-number {
   max-width: 3rem;
 }
-
 @media screen and (min-width: 300px) and (max-width: 1023px) {
+  body {
+    width: 100vw;
+    height: auto;
+  }
   body main {
     padding: 5rem 0 1rem;
     width: 100vw;

@@ -21,16 +21,19 @@ footer .contact .contact__phone-number {
   font-size: 2rem;
   font-weight: 700;
 }
+footer .contact .contact__media {
+  background-color: transparent;
+  border: none;
+}
 footer .sns svg {
   width: 5rem;
   height: 5rem;
 }
-
 @media screen and (min-width: 300px) and (max-width: 1023px) {
   footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
   }
   footer .contact .contact__phone-number {
     font-size: 1rem;

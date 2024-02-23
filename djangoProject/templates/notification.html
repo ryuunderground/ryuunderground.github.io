@@ -20,7 +20,30 @@
           <div class="title">제목</div>
           <div class="date">작성일</div>
         </div>
-        <div class="notices__container"></div>
+
+        <div class="notices__container">
+          <div class="notification__collumn">
+            <div class="number">1</div>
+            <button class="notification__title abtn" onclick="openRule()">
+              매직클럽 회칙
+            </button>
+            <div class="date">2024.01.30</div>
+          </div>
+          <div class="notification__collumn">
+            <div class="number">2</div>
+            <button class="notification__title abtn" onclick="openTest()">
+              테스트
+            </button>
+            <div class="date">2024.01.30</div>
+          </div>
+          <div class="notification__collumn">
+            <div class="number">3</div>
+            <button class="notification__title abtn" onclick="openTest()">
+              테스트
+            </button>
+            <div class="date">2024.01.30</div>
+          </div>
+        </div>
         <div class="pagination__container">
           <div class="pagination">
             <svg
@@ -53,5 +76,4 @@
 {% endblock %}
 
 {% block scripts%}
-    <script src={% static "js/notification.js" %}></script>
 {% endblock %}

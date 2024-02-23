@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'styles/screens/participate.css' %}" />
+{% endblock %}
+
+{% block add_nav %}
+    <div class="__label">
+        <span>이벤트</span>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <main>
+      <form class="form">
+        <!-- 마감 시 주석 치우기
+        <div class="overlay">
+          <span>마감된 행사입니다.</span>
+        </div>
+        -->
+        <span class="form__title">매직클럽 기획공연</span>
+        <div class="form__contents">
+          <div class="form__event">
+            <div class="form__event-img">
+              <img src={% static "img/coming.png"%}/>
+            </div>
+            <div class="form__event-info">
+              <p>
+                장소 : 미정
+                <br />
+                대상 : 미정
+                <br />
+                일시 : 5월 말
+                <br />
+                가격 : 계산기를 두드리는 중
+              </p>
+            </div>
+          </div>
+
+          <div class="form__text">
+            <p>
+              매직클럽의 24년 두 번째 기획공연입니다.<br /><br />
+              1월 기획공연 ON, 기억하시나요?<br />
+              더 큰 규모와 더 성장한 모습으로 매직클럽이 돌아왔습니다.<br /><br />
+              ON을 보고 좋으셨던 분들, 못 봐서 아쉬우신 분들 모두, 5월에
+              봽겠습니다!
+            </p>
+          </div>
+
+          <div class="form__assign">
+            <span> 개, 발, 자. 셋이서 예약 시스템 개발 중입니다. </span>
+            <!--
+            <fieldset class="pure-group fieldset__name">
+              <label for="name">참여자 이름: </label>
+              <ul class="assign_list">
+                <li class="person-container">
+                  <input
+                    required
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="홍길동"
+                  />
+                  <button class="add_person">﹢</button>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="pure-group fieldset__person">
+              <label for="name">참여 인원: </label>
+              <input
+                required
+                id="person"
+                name="person"
+                type="number"
+                placeholder="1"
+              />
+            </fieldset>
+            <fieldset class="pure-group fieldset__agree">
+              <label for="name"
+                >장소, 일시, 가격, 환불 규정 등, 매직 클럽은 개인의 규정
+                미숙지로 인한 불이익은 책임지지 않습니다.
+              </label>
+              <div class="agree-btn">
+                <input required id="agree" name="agree" type="checkbox" />
+                <span>동의합니다.</span>
+              </div>
+            </fieldset>
+            <div class="event__btn-container">
+              <input type="submit" class="event__btn" value="신청 하기" />
+            </div>-->
+          </div>
+        </div>
+      </form>
+    </main>
+{% endblock %}
+
+{% block scripts %}
+    <script src={% static "js/event_person.js"%}></script>
+{% endblock %}

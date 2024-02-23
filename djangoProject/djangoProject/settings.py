@@ -30,6 +30,8 @@ ALLOWED_HOSTS = [
     '.ap-northeast-2.compute.amazonaws.com',
     'magicclub.shop',
     'www.magicclub.shop',
+    'magicclub.kr',
+    'www.magicclub.kr',
 ]
 
 

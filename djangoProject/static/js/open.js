@@ -31,7 +31,7 @@ function openLogin() {
 }
 
 function openRule() {
-  window.open("notifications/rule", "_self");
+  window.open("/rule", "_self");
 }
 
 function openTest() {

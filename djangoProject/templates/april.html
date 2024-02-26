@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'styles/screens/participate.css' %}" />
+{% endblock %}
+
+{% block add_nav %}
+    <div class="__label">
+        <span>이벤트</span>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <main>
+      <form class="form">
+        <!-- 마감 시 주석 치우기
+        <div class="overlay">
+          <span>마감된 행사입니다.</span>
+        </div>
+        -->
+        <span class="form__title">매직클럽 렉쳐 - 빛빛빛</span>
+        <div class="form__contents">
+          <div class="form__event">
+            <div class="form__event-img">
+              <img src="{% static "img/coming.png"%}"/>
+            </div>
+            <div class="form__event-info">
+              <p>
+                장소 : 미정
+                <br />
+                대상 : 미정
+                <br />
+                일시 : 4월 중순?
+                <br />
+                가격 : 계산기를 두드리는 중
+              </p>
+            </div>
+          </div>
+
+          <div class="form__text">
+            <p>
+              관객의 감정변화를 더 가까이서 볼 수 있다는 점에서 클로즈업은
+              매력적인 장르입니다.<br />
+              접근성도 좋고, 요즘 유행이기도 하니 도전할 가치가 충분하죠. 그런데
+              말입니다....<br /><br />
+              이왕 배워서 연습할 거 잘하는 사람에게 배웁시다!<br />
+              이야 이게 참 좋은데 말을 할 수가 없네.
+            </p>
+          </div>
+
+          <div class="form__assign">
+            <span> 개, 발, 자. 셋이서 예약 시스템 개발 중입니다. </span>
+            <!--
+            <fieldset class="pure-group fieldset__name">
+              <label for="name">참여자 이름: </label>
+              <ul class="assign_list">
+                <li class="person-container">
+                  <input
+                    required
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="홍길동"
+                  />
+                  <button class="add_person">﹢</button>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="pure-group fieldset__person">
+              <label for="name">참여 인원: </label>
+              <input
+                required
+                id="person"
+                name="person"
+                type="number"
+                placeholder="1"
+              />
+            </fieldset>
+            <fieldset class="pure-group fieldset__agree">
+              <label for="name"
+                >장소, 일시, 가격, 환불 규정 등, 매직 클럽은 개인의 규정
+                미숙지로 인한 불이익은 책임지지 않습니다.
+              </label>
+              <div class="agree-btn">
+                <input required id="agree" name="agree" type="checkbox" />
+                <span>동의합니다.</span>
+              </div>
+            </fieldset>
+            <div class="event__btn-container">
+              <input type="submit" class="event__btn" value="신청 하기" />
+            </div>-->
+          </div>
+        </div>
+      </form>
+    </main>
+{% endblock %}
+
+{% block scripts %}
+    <script src={% static "js/event_person.js"%}></script>
+{% endblock %}

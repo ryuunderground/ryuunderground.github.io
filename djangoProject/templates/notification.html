@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'styles/screens/notification.css' %}" />
+{% endblock %}
+
+{% block add_nav %}
+    <div class="__label">
+        <span>공지 사항</span>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <main>
+      <div class="contents__container">
+        <div class="index">
+          <div class="number">번호</div>
+          <div class="title">제목</div>
+          <div class="date">작성일</div>
+        </div>
+
+        <div class="notices__container">
+          <div class="notification__collumn">
+            <div class="number">1</div>
+            <button class="notification__title abtn" onclick="openRule()">
+              매직클럽 회칙
+            </button>
+            <div class="date">2024.01.30</div>
+          </div>
+        <div class="pagination__container">
+          <div class="pagination">
+            <svg
+              class="pagination__left-chevron display-none"
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 320 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+              />
+            </svg>
+            <div class="page_1">1</div>
+            <svg
+              class="pagination__right-chevron display-none"
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 320 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+{% endblock %}
+
+{% block scripts%}
+{% endblock %}

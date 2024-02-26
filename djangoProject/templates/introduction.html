@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'styles/screens/intro.css' %}" />
+{% endblock %}
+
+{% block add_nav %}
+    <div class="__label">
+        <span class="page_now">클럽 소개</span>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <main>
+      <div class="slideshow-container">
+        <div class="slide">
+          <div class="icon fade-in">
+            <img class="slide__logo" src={% static "img/mklogotp.png" %} alt="Club Icon" />
+          </div>
+          <div class="text-container">
+            <h2 class="intro__title fade-in">
+              마술인들의 놀이터,<br />매직클럽입니다.
+            </h2>
+            <p class="intro__contents fade-in">
+              2019년, 대학 마술 동아리를 위한 단체가 있었습니다.<br />
+              동아리 부원들의 니즈를 맞춰주는 것 이상으로 더 많은 사람들과
+              활동하고자 합니다.<br />
+              <br />
+              더 자유롭고, 더 활기차게
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="icon fade-in">
+            <img
+              class="slide__logo"
+              src={% static "img/magicclubbox.png" %}
+              alt="Club Icon"
+            />
+          </div>
+          <div class="text-container">
+            <h2 class="intro__title fade-in">가입 자격은 어떻게 되나요?</h2>
+            <p class="intro__contents fade-in">
+              마술에 관심과 열정이 있는 성인이면 모두 가능합니다.<br />
+              미성년자분들껜 죄송하지만,<br />저희가 아직 여러분을 담기에
+              부족합니다.<br />
+              우리 모두 성장해서 다시 만나요.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="icon fade-in">
+            <img
+              class="slide__logo"
+              src={% static "img/new_logo_nobackground.png" %}
+              alt="Club Icon"
+            />
+          </div>
+          <div class="text-container">
+            <h2 class="intro__title fade-in">왜 매직클럽에 가입해야하나요?</h2>
+            <p class="intro__contents fade-in">
+              혼자서 마술을 하기란 쉽지 않습니다.<br /><br />
+              매직클럽은 여러분들과 마술을 배우고, 사람을 배우고, 무대에
+              오르는<br />
+              그 모든 과정에 함께 합니다.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="icon fade-in">
+            <div class="rdimg"></div>
+          </div>
+          <div class="text-container">
+            <h2 class="intro__title fade-in">지난 활동내역</h2>
+            <p class="intro__contents fade-in">
+              공연, 스터디, 워크샵, 파티 등등 <br />여러분과 함께 할 소재는 아직
+              무궁무진합니다.<br />
+              이벤트 창에서 어떤 컨텐츠를 준비 중인지 확인해보세요!
+            </p>
+            <div class="go_to_event">
+              <button class="event__btn abtn" onclick="openEvent()">
+                이벤트 보러 가기
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="chevrons">
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+      </div>
+    </main>
+{% endblock %}
+
+{% block scripts%}
+    <script defer>
+        const images = [];
+        images.push("{% static "img/past/1.jpg" %}");
+        images.push("{% static "img/past/2.jpg" %}");
+        images.push("{% static "img/past/3.jpg" %}");
+        images.push("{% static "img/past/4.jpg" %}");
+        images.push("{% static "img/past/5.jpg" %}");
+        images.push("{% static "img/past/6.jpg" %}");
+        images.push("{% static "img/past/7.jpg" %}");
+        images.push("{% static "img/past/8.jpg" %}");
+        images.push("{% static "img/past/9.jpg" %}");
+        images.push("{% static "img/past/10.jpg" %}");
+    </script>
+    <script src={% static 'js/slides.js' %}></script>
+    <script src={% static 'js/rdimg.js' %}></script>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'styles/screens/main.css' %}" />
+{% endblock %}
+
+{% block content %}
+    <main>
+      <div class="main_logo__container">
+        <img class="main_logo" src={% static "img/mklogotp.png" %} />
+      </div>
+    </main>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

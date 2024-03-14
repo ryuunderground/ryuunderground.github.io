@@ -14,7 +14,8 @@ const InfoSlide = styled.li`
 const InfoTitle = styled.h1`
   font-size: 5rem;
   font-weight: 600;
-  padding: 2rem;
+  padding: 5vw;
+  width: 100vw;
 `;
 const InfoP = styled.p`
   font-size: 3rem;
